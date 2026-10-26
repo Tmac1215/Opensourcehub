@@ -1,9 +1,0 @@
-# Cloudflare Pages — wrangler.toml
-# Deploy: npx wrangler pages deploy .next/standalone
-# Or connect your GitHub repo in the Cloudflare Dashboard
-
-name = "opensourcehub"
-compatibility_date = "2024-01-01"
-
-[vars]
-NEXT_PUBLIC_SITE_URL = "https://opensourcehub.io"
