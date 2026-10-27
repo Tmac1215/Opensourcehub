@@ -34,7 +34,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Zapier",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -130,7 +130,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Adobe Acrobat",
       "category": "DevOps & Git",
       "has_docker": true,
       "topics": [
@@ -185,7 +185,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -249,7 +249,7 @@
       "language": "PHP",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Heroku / Vercel",
       "category": "Database",
       "has_docker": true,
       "topics": [
@@ -646,7 +646,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Evernote",
       "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
@@ -712,7 +712,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -1046,7 +1046,7 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Heroku",
       "category": "DevOps & Git",
       "has_docker": true,
       "topics": [
@@ -1072,7 +1072,7 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -1330,7 +1330,7 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
@@ -1348,7 +1348,7 @@
       "language": "",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Zapier",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -1413,7 +1413,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Docker Hub",
       "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
@@ -1498,7 +1498,7 @@
       "language": "Dockerfile",
       "last_updated": "2026-10-22",
       "license": "",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "File Storage",
       "has_docker": true,
       "topics": [
@@ -1662,7 +1662,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -1709,7 +1709,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Google Docs",
       "category": "Productivity",
       "has_docker": false,
       "topics": [
@@ -1760,7 +1760,7 @@
       "language": "Ruby",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "DocuSign",
       "category": "DevOps & Git",
       "has_docker": false,
       "topics": [
@@ -1847,7 +1847,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Google Docs",
       "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
@@ -1902,7 +1902,7 @@
       "language": "PHP",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Feedly",
       "category": "Productivity",
       "has_docker": false,
       "topics": [
@@ -2043,7 +2043,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "DocuSign",
       "category": "Database",
       "has_docker": false,
       "topics": [
@@ -2100,8 +2100,8 @@
       "language": "",
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
-      "saas_alternative": "",
-      "category": "Other",
+      "saas_alternative": "Zapier",
+      "category": "Automation",
       "has_docker": false,
       "topics": [
         "ai",
@@ -2162,7 +2162,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Deployment & Hosting",
       "has_docker": false,
       "topics": [
         "agents",
@@ -2180,7 +2180,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Google Docs",
       "category": "Auth & Security",
       "has_docker": false,
       "topics": [
@@ -2214,7 +2214,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Evernote",
       "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
@@ -2268,7 +2268,7 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Tableau / Looker",
       "category": "Auth & Security",
       "has_docker": true,
       "topics": [
@@ -2301,7 +2301,7 @@
       "language": "JavaScript",
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Zapier",
       "category": "Backend / BaaS",
       "has_docker": false,
       "topics": [
@@ -2343,7 +2343,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Database",
       "has_docker": false,
       "topics": [
@@ -2395,7 +2395,7 @@
       "language": "PHP",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Pocket / Instapaper",
       "category": "Productivity",
       "has_docker": false,
       "topics": [
@@ -2417,7 +2417,7 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Trello",
       "category": "Analytics",
       "has_docker": true,
       "topics": [
@@ -2567,7 +2567,7 @@
       "language": "Go",
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "NordVPN",
       "category": "File Storage",
       "has_docker": true,
       "topics": [
@@ -2684,7 +2684,7 @@
       "language": "Rust",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Networking",
       "has_docker": false,
       "topics": [
@@ -2707,7 +2707,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -2741,7 +2741,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Pocket",
       "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
@@ -2900,7 +2900,7 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Backend / BaaS",
       "has_docker": false,
       "topics": [
@@ -3112,7 +3112,7 @@
       "language": "PHP",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Trello",
       "category": "Project Management",
       "has_docker": false,
       "topics": [
@@ -3199,7 +3199,7 @@
       "language": "Shell",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Bugsnag / Rollbar",
       "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
@@ -3333,7 +3333,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -3368,8 +3368,8 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
-      "category": "Other",
+      "saas_alternative": "Calendly",
+      "category": "Finance",
       "has_docker": false,
       "topics": [
         "macos-app",
@@ -3539,7 +3539,7 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Database",
       "has_docker": true,
       "topics": [
@@ -3676,7 +3676,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Other",
       "has_docker": false,
       "topics": [
@@ -4147,7 +4147,7 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Database",
       "has_docker": false,
       "topics": [
@@ -4415,7 +4415,7 @@
       "language": "JavaScript",
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
@@ -5161,7 +5161,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -5308,7 +5308,7 @@
       "language": "C#",
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Google Docs",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -5731,7 +5731,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Heroku / Vercel",
       "category": "File Storage",
       "has_docker": true,
       "topics": [
@@ -5928,7 +5928,7 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Productivity",
       "has_docker": false,
       "topics": [
@@ -6052,7 +6052,7 @@
       "language": "Rust",
       "last_updated": "2026-10-20",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Google Docs",
       "category": "Database",
       "has_docker": false,
       "topics": [
@@ -6272,7 +6272,7 @@
       "language": "Kotlin",
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Media & Photos",
       "has_docker": false,
       "topics": [
@@ -6370,7 +6370,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
@@ -6534,7 +6534,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -6585,7 +6585,7 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -6691,7 +6691,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "CMS & Blogging",
       "has_docker": false,
       "topics": [
@@ -6726,7 +6726,7 @@
       "language": "Go",
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -6968,7 +6968,7 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Analytics",
       "has_docker": false,
       "topics": [
@@ -7003,7 +7003,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -7030,7 +7030,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Deployment & Hosting",
       "has_docker": false,
       "topics": [
         "deploy",
@@ -7261,7 +7261,7 @@
       "language": "Go",
       "last_updated": "2026-10-17",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Networking",
       "has_docker": false,
       "topics": [
@@ -7348,7 +7348,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Backend / BaaS",
       "has_docker": false,
       "topics": [
@@ -7375,7 +7375,7 @@
       "language": "Python",
       "last_updated": "2026-10-20",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Google Analytics",
       "category": "Analytics",
       "has_docker": true,
       "topics": [
@@ -7487,7 +7487,7 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Zoom",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -7585,7 +7585,7 @@
       "language": "Elixir",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Database",
       "has_docker": false,
       "topics": [
@@ -7628,7 +7628,7 @@
       "language": "Shell",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "NordVPN",
       "category": "Networking",
       "has_docker": false,
       "topics": [
@@ -7696,7 +7696,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Braze / Klaviyo",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -7731,8 +7731,8 @@
       "language": "",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
-      "category": "Other",
+      "saas_alternative": "Calendly",
+      "category": "Forms & Surveys",
       "has_docker": false,
       "topics": [
         "ai",
@@ -7796,7 +7796,7 @@
       "language": "Python",
       "last_updated": "2026-10-20",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "DevOps & Git",
       "has_docker": false,
       "topics": [
@@ -7847,7 +7847,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Docker Hub",
       "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
@@ -8000,7 +8000,7 @@
       "language": "HTML",
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Evernote",
       "category": "File Storage",
       "has_docker": true,
       "topics": [
@@ -8064,7 +8064,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "File Storage",
       "has_docker": true,
       "topics": [
@@ -8461,7 +8461,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "QuickBooks",
       "category": "Backend / BaaS",
       "has_docker": false,
       "topics": [
@@ -8562,7 +8562,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Google Docs",
       "category": "Backend / BaaS",
       "has_docker": false,
       "topics": [
@@ -8644,7 +8644,7 @@
       "language": "Dart",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -8809,7 +8809,7 @@
       "language": "HTML",
       "last_updated": "2026-10-05",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "NordVPN",
       "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
@@ -8851,7 +8851,7 @@
       "language": "PHP",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -9157,7 +9157,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -9372,7 +9372,7 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "CMS & Blogging",
       "has_docker": false,
       "topics": [
@@ -9458,7 +9458,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Forms & Surveys",
       "has_docker": false,
       "topics": [
         "agent-orchestration",
@@ -9518,7 +9518,7 @@
       "language": "Go",
       "last_updated": "2026-10-20",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Backend / BaaS",
       "has_docker": false,
       "topics": [
@@ -9600,7 +9600,7 @@
       "language": "Elm",
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Google Drive",
       "category": "Email",
       "has_docker": false,
       "topics": [
@@ -9696,7 +9696,7 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "DevOps & Git",
       "has_docker": false,
       "topics": [
@@ -9805,7 +9805,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Google Docs",
       "category": "Database",
       "has_docker": false,
       "topics": [
@@ -9830,7 +9830,7 @@
       "language": "Python",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -10023,7 +10023,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-2.0",
       "saas_alternative": "Plex / Netflix",
-      "category": "Other",
+      "category": "Media & Video",
       "has_docker": false,
       "topics": [
         "android-app",
@@ -10120,8 +10120,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-20",
       "license": "MIT",
-      "saas_alternative": "",
-      "category": "Other",
+      "saas_alternative": "Calendly",
+      "category": "Business Intelligence",
       "has_docker": false,
       "topics": [
         "ai",
@@ -10210,7 +10210,7 @@
       "language": "Python",
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Database",
       "has_docker": true,
       "topics": [
@@ -10325,7 +10325,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
@@ -10623,7 +10623,7 @@
       "language": "Python",
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -10916,7 +10916,7 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Google Docs",
       "category": "Project Management",
       "has_docker": false,
       "topics": [
@@ -11011,7 +11011,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Google Docs",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -11046,7 +11046,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
@@ -11069,7 +11069,7 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -11171,7 +11171,7 @@
       "language": "Shell",
       "last_updated": "2026-10-15",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "NordVPN",
       "category": "DevOps & Git",
       "has_docker": false,
       "topics": [
@@ -11366,7 +11366,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -11444,7 +11444,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
@@ -11619,7 +11619,7 @@
       "language": "Swift",
       "last_updated": "2026-10-18",
       "license": "",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -11706,7 +11706,7 @@
       "language": "Shell",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "NordVPN",
       "category": "Networking",
       "has_docker": false,
       "topics": [
@@ -11741,7 +11741,7 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Database",
       "has_docker": true,
       "topics": [
@@ -11802,7 +11802,7 @@
       "language": "Go",
       "last_updated": "2026-10-20",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
@@ -12122,8 +12122,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-21",
       "license": "LGPL-3.0",
-      "saas_alternative": "",
-      "category": "Other",
+      "saas_alternative": "Google Docs",
+      "category": "Forms & Surveys",
       "has_docker": false,
       "topics": [
         "excalidash",
@@ -12189,7 +12189,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Backend / BaaS",
       "has_docker": false,
       "topics": [
@@ -12327,7 +12327,7 @@
       "language": "JavaScript",
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
-      "saas_alternative": "",
+      "saas_alternative": "Pushover",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -12428,7 +12428,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "Project Management",
       "has_docker": false,
       "topics": [
@@ -13304,7 +13304,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Calendly",
       "category": "CMS & Blogging",
       "has_docker": false,
       "topics": [
@@ -13466,7 +13466,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Forms & Surveys",
       "has_docker": false,
       "topics": [
         "agent-collaboration",
