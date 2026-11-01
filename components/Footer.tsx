@@ -10,6 +10,8 @@ const CLOUD_PROVIDERS = [
 ];
 
 export default function Footer() {
+  // Skip affiliate links that still have the YOUR_REF placeholder.
+  const providers = CLOUD_PROVIDERS.filter(p => !p.url.includes('YOUR_REF'));
   const topAlts = getSaasAlternatives().slice(0, 8);
 
   return (
@@ -55,7 +57,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold text-sm mb-4">Self-Host On</h3>
             <ul className="space-y-2.5">
-              {CLOUD_PROVIDERS.map(p => (
+              {providers.map(p => (
                 <li key={p.name}>
                   <a
                     href={p.url}
