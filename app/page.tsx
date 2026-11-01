@@ -83,7 +83,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
               href="#browse"
-              className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-6 py-3.5 rounded-xl transition-colors shadow-lg shadow-emerald-500/25"
+              className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold px-6 py-3.5 rounded-xl transition-colors shadow-lg shadow-emerald-500/25"
             >
               <LayoutGrid className="w-4 h-4" />
               Browse All Tools
@@ -117,7 +117,7 @@ export default function HomePage() {
 
       {/* ── SaaS quick-links ───────────────────────────────────────────────── */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-        <h2 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">
+        <h2 className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">
           Browse by alternative
         </h2>
         <div className="flex flex-wrap gap-2">
