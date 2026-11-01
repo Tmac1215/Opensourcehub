@@ -66,7 +66,7 @@ export default function Footer() {
                     className="text-sm text-slate-400 hover:text-white transition-colors flex items-start gap-1 group"
                   >
                     <span className="flex-1">{p.name}</span>
-                    <span className="text-emerald-500/70 text-xs shrink-0 group-hover:text-emerald-400 transition-colors mt-0.5">
+                    <span className="text-emerald-400 text-xs shrink-0 group-hover:text-emerald-300 transition-colors mt-0.5">
                       {p.credit}
                     </span>
                     <ExternalLink className="w-3 h-3 shrink-0 opacity-0 group-hover:opacity-100 transition-opacity mt-0.5" />
@@ -97,12 +97,12 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-slate-600">
+          <p className="text-xs text-slate-400">
             © {new Date().getFullYear()} OpenSourceHub. Data sourced from GitHub public API.
           </p>
-          <p className="text-xs text-slate-600">
+          <p className="text-xs text-slate-400">
             Some links are affiliate links — they help keep this site free.{' '}
-            <a href="#" className="hover:text-slate-400 underline underline-offset-2">Disclosure</a>
+            <a href="#" className="hover:text-white underline underline-offset-2">Disclosure</a>
           </p>
         </div>
       </div>
