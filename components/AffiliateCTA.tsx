@@ -45,6 +45,9 @@ interface Props {
 export default function AffiliateCTA({ softwareName, provider = 'digitalocean', compact = false }: Props) {
   const p = PROVIDERS[provider];
 
+  // Hide until a real referral code replaces the YOUR_REF placeholder.
+  if (p.url.includes('YOUR_REF')) return null;
+
   if (compact) {
     return (
       <a
