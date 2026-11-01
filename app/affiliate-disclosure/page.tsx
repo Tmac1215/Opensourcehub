@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import LegalPage, { CONTACT_URL } from '@/components/LegalPage';
+import LegalPage from '@/components/LegalPage';
 
 export const metadata: Metadata = {
   title: 'Affiliate Disclosure',
@@ -54,8 +54,7 @@ export default function AffiliateDisclosurePage() {
 
       <h2>Questions</h2>
       <p>
-        If you have questions about this disclosure, please contact us through our{' '}
-        <a href={CONTACT_URL} target="_blank" rel="noopener noreferrer">GitHub issues page</a>.
+        If you have questions about this disclosure, please reach us through our <Link href="/contact">contact form</Link>.
       </p>
     </LegalPage>
   );
