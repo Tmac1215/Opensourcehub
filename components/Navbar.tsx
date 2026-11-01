@@ -1,6 +1,10 @@
 import Link from 'next/link';
 import { Terminal, Github, LayoutGrid } from 'lucide-react';
 
+// Replace YOUR_REF with a real referral code to show the Deploy links.
+const DEPLOY_URL = 'https://www.digitalocean.com/?refcode=YOUR_REF';
+const SHOW_DEPLOY = !DEPLOY_URL.includes('YOUR_REF');
+
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
@@ -30,14 +34,16 @@ export default function Navbar() {
           >
             Alternatives
           </Link>
-          <a
-            href="https://www.digitalocean.com/?refcode=YOUR_REF"
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            className="text-slate-400 hover:text-white transition-colors"
-          >
-            Deploy
-          </a>
+          {SHOW_DEPLOY && (
+            <a
+              href={DEPLOY_URL}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="text-slate-400 hover:text-white transition-colors"
+            >
+              Deploy
+            </a>
+          )}
         </nav>
 
         {/* Right side */}
@@ -51,14 +57,16 @@ export default function Navbar() {
           >
             <Github className="w-5 h-5" />
           </a>
-          <a
-            href="https://www.digitalocean.com/?refcode=YOUR_REF"
-            target="_blank"
-            rel="noopener noreferrer sponsored"
-            className="hidden sm:inline-flex items-center gap-1.5 bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors"
-          >
-            Deploy $5/mo
-          </a>
+          {SHOW_DEPLOY && (
+            <a
+              href={DEPLOY_URL}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="hidden sm:inline-flex items-center gap-1.5 bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-xs font-semibold px-3 py-1.5 rounded-lg transition-colors"
+            >
+              Deploy $5/mo
+            </a>
+          )}
         </div>
       </div>
     </header>
