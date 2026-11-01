@@ -49,9 +49,8 @@ export default function AboutPage() {
 
       <h2>Contact</h2>
       <p>
-        The best way to reach us is through our{' '}
-        <a href={CONTACT_URL} target="_blank" rel="noopener noreferrer">GitHub issues page</a>. This is public, so
-        please do not post private or sensitive information there.
+        The best way to reach us is through our <Link href="/contact">contact form</Link>. For public corrections or
+        suggestions, you can also use our <a href={CONTACT_URL} target="_blank" rel="noopener noreferrer">GitHub issues page</a>.
       </p>
     </LegalPage>
   );
