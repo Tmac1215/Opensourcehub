@@ -27,7 +27,12 @@ const SIZE: Record<NonNullable<Props['format']>, string> = {
   sidebar:     'h-[600px] max-w-xs',
 };
 
+// Ads are hidden until an ad account is connected. Set NEXT_PUBLIC_ADS_ENABLED=true to show slots.
+const ADS_ENABLED = process.env.NEXT_PUBLIC_ADS_ENABLED === 'true';
+
 export default function AdSlot({ slot = 'default', format = 'rectangle', className = '' }: Props) {
+  if (!ADS_ENABLED) return null;
+
   return (
     <div
       className={[
