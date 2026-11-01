@@ -24,6 +24,10 @@ const LANG_COLOR: Record<string, string> = {
   Elixir:     'bg-purple-500',
 };
 
+// Replace YOUR_REF with a real referral code to show the Deploy button.
+const DEPLOY_URL = 'https://www.digitalocean.com/?refcode=YOUR_REF';
+const SHOW_DEPLOY = !DEPLOY_URL.includes('YOUR_REF');
+
 export default function SoftwareCard({ software: s, highlighted = false }: Props) {
   return (
     <article
@@ -105,9 +109,9 @@ export default function SoftwareCard({ software: s, highlighted = false }: Props
             <Code2 className="w-3 h-3" />
             GitHub
           </a>
-          {s.has_docker && (
+          {s.has_docker && SHOW_DEPLOY && (
             <a
-              href="https://www.digitalocean.com/?refcode=YOUR_REF"
+              href={DEPLOY_URL}
               target="_blank"
               rel="noopener noreferrer sponsored"
               className="inline-flex items-center gap-1 text-xs px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 transition-colors font-medium"
