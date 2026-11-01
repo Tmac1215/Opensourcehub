@@ -87,10 +87,16 @@ export default function Footer() {
                 <Link href="/alternative" className="hover:text-white transition-colors">All Alternatives</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">Submit a Tool</a>
+                <Link href="/submit" className="hover:text-white transition-colors">Submit a Tool</Link>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">Affiliate Disclosure</a>
+                <Link href="/affiliate-disclosure" className="hover:text-white transition-colors">Affiliate Disclosure</Link>
+              </li>
+              <li>
+                <Link href="/about" className="hover:text-white transition-colors">About</Link>
+              </li>
+              <li>
+                <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
               </li>
             </ul>
           </div>
@@ -102,7 +108,7 @@ export default function Footer() {
           </p>
           <p className="text-xs text-slate-400">
             Some links are affiliate links — they help keep this site free.{' '}
-            <a href="#" className="hover:text-white underline underline-offset-2">Disclosure</a>
+            <Link href="/affiliate-disclosure" className="hover:text-white underline underline-offset-2">Disclosure</Link>
           </p>
         </div>
       </div>
