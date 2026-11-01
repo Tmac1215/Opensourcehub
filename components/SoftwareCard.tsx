@@ -44,7 +44,7 @@ export default function SoftwareCard({ software: s, highlighted = false }: Props
           <h3 className="text-white font-semibold truncate group-hover:text-emerald-400 transition-colors leading-snug">
             {s.name}
           </h3>
-          <span className="text-xs font-medium text-emerald-500/80">{s.category}</span>
+          <span className="text-xs font-medium text-emerald-400">{s.category}</span>
         </div>
         {/* Stars */}
         <div className="flex items-center gap-1 text-amber-400 shrink-0 bg-amber-400/10 px-2 py-1 rounded-full">
@@ -92,7 +92,7 @@ export default function SoftwareCard({ software: s, highlighted = false }: Props
       <div className="flex items-center justify-between pt-2 border-t border-slate-700/50 gap-2">
         {/* Last updated */}
         {s.last_updated && (
-          <span className="inline-flex items-center gap-1 text-xs text-slate-500">
+          <span className="inline-flex items-center gap-1 text-xs text-slate-400">
             <Calendar className="w-3 h-3" />
             {formatDate(s.last_updated)}
           </span>
