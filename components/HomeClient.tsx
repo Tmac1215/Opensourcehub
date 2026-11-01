@@ -119,12 +119,12 @@ export default function HomeClient({ software, categories }: Props) {
               className={[
                 'flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all',
                 active
-                  ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-500/25'
+                  ? 'bg-emerald-500 text-slate-950 shadow-lg shadow-emerald-500/25'
                   : 'bg-slate-800 border border-slate-700 text-slate-300 hover:bg-slate-700',
               ].join(' ')}>
-              <Icon className={`w-3.5 h-3.5 ${active ? 'text-white' : color}`} />
+              <Icon className={`w-3.5 h-3.5 ${active ? 'text-slate-950' : color}`} />
               {label} stars
-              <span className={`text-xs ${active ? 'text-emerald-100' : 'text-slate-500'}`}>
+              <span className={`text-xs ${active ? 'text-slate-900' : 'text-slate-400'}`}>
                 {count}
               </span>
             </button>
@@ -143,11 +143,11 @@ export default function HomeClient({ software, categories }: Props) {
                 className={[
                   'px-3 py-1.5 rounded-full text-xs font-medium transition-all',
                   activeCategory === name
-                    ? 'bg-blue-500 text-white'
+                    ? 'bg-blue-600 text-white'
                     : 'bg-slate-800/80 text-slate-400 hover:bg-slate-700 border border-slate-700/80',
                 ].join(' ')}>
                 {name}
-                <span className={`ml-1 ${activeCategory === name ? 'text-blue-100' : 'text-slate-600'}`}>
+                <span className={`ml-1 ${activeCategory === name ? 'text-white' : 'text-slate-400'}`}>
                   {count}
                 </span>
               </button>
@@ -177,7 +177,7 @@ export default function HomeClient({ software, categories }: Props) {
         <div className="text-center py-20">
           <Search className="w-12 h-12 mx-auto mb-4 text-slate-700" />
           <p className="text-lg font-medium text-slate-300">No results found</p>
-          <p className="text-slate-500 text-sm mt-2 mb-6">Try different keywords or adjust the star filter.</p>
+          <p className="text-slate-400 text-sm mt-2 mb-6">Try different keywords or adjust the star filter.</p>
           <button onClick={clearAll}
             className="px-5 py-2.5 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 rounded-xl border border-emerald-500/20 text-sm font-medium transition-colors">
             Reset filters
