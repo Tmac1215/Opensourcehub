@@ -113,5 +113,5 @@ export function formatDate(iso: string): string {
 // ── SEO helpers ───────────────────────────────────────────────────────────────
 
 export function getSiteUrl(): string {
-  return process.env.NEXT_PUBLIC_SITE_URL ?? 'https://opensourcehub.io';
+  return process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.saasalternatives.online';
 }
