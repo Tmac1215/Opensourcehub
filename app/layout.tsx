@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   description:
     'Discover 500+ self-hosted, open-source alternatives to popular SaaS products. Free forever, full data ownership, deploy with Docker.',
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://opensourcehub.io'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.saasalternatives.online'),
   openGraph: {
     siteName: 'OpenSourceHub',
     type: 'website',
