@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import LegalPage, { CONTACT_URL } from '@/components/LegalPage';
+import LegalPage from '@/components/LegalPage';
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
@@ -18,13 +18,22 @@ export default function PrivacyPage() {
     >
       <h2>Information we collect</h2>
       <p>
-        We do not require you to create an account, and the site does not have comment or sign-up forms, so we do not
-        directly collect names, email addresses or similar personal details.
+        We do not require you to create an account, and the site has no comments or sign-up forms. The only personal
+        information we receive directly is what you choose to send us through the <Link href="/contact">contact form</Link>
+        (your name, email address and message).
       </p>
       <p>
         Like most websites, our hosting provider (Vercel) automatically processes technical information needed to
         deliver pages, such as your IP address, browser type, device information, referring page and the pages you
         request. This is used to operate, secure and troubleshoot the site.
+      </p>
+
+      <h2>Contact form</h2>
+      <p>
+        If you use the contact form, your name, email address and message are sent to us through Web3Forms, a form
+        service that processes the submission and delivers it to our email. We use this information only to read and
+        reply to your message, and we do not sell it or use it for marketing. Please do not include sensitive personal
+        information in your message.
       </p>
 
       <h2>Cookies and advertising</h2>
@@ -89,9 +98,9 @@ export default function PrivacyPage() {
       <h2>Your rights</h2>
       <p>
         Depending on where you live, you may have rights over your personal data, such as access, correction,
-        deletion, or objection to certain processing. Because we do not maintain accounts or collect personal details
-        ourselves, most data about your visit is held by our hosting provider and by Google, so requests about that data
-        are best directed to them.
+        deletion, or objection to certain processing. We do not maintain accounts. Apart from messages you send us, most data about your visit is held by our
+        hosting provider and by Google, so requests about that data are best directed to them. To ask about a message
+        you sent us, use the <Link href="/contact">contact form</Link>.
       </p>
 
       <h2>Changes to this policy</h2>
@@ -101,9 +110,7 @@ export default function PrivacyPage() {
 
       <h2>Contact</h2>
       <p>
-        Questions about this policy can be raised through our{' '}
-        <a href={CONTACT_URL} target="_blank" rel="noopener noreferrer">GitHub issues page</a>. This is public, so
-        please do not post private information there.
+        Questions about this policy can be sent through our <Link href="/contact">contact form</Link>.
       </p>
     </LegalPage>
   );
