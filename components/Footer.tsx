@@ -29,6 +29,21 @@ export default function Footer() {
             <p className="text-slate-400 text-sm leading-relaxed">
               Find free, self-hosted alternatives to every SaaS tool. Own your data, cut your bills.
             </p>
+            <a
+              href="https://www.producthunt.com/products/opensourcehub-2?embed=true&utm_source=badge-featured&utm_medium=badge&utm_campaign=badge-opensourcehub-2"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-5"
+            >
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                alt="OpenSourceHub - Free Open-Source Alternatives to Every SaaS Tool | Product Hunt"
+                width={250}
+                height={54}
+                loading="lazy"
+                src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1301242&theme=light&t=1793599000921"
+              />
+            </a>
           </div>
 
           {/* Browse */}
