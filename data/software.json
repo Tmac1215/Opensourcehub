@@ -12,7 +12,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Resource Lists",
       "has_docker": false,
       "topics": [
         "awesome",
@@ -35,7 +35,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "Zapier",
-      "category": "File Storage",
+      "category": "Automation",
       "has_docker": false,
       "topics": [
         "ai",
@@ -69,8 +69,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "saas_alternative": "ChatGPT",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -131,7 +131,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "Adobe Acrobat",
-      "category": "DevOps & Git",
+      "category": "Forms & Documents",
       "has_docker": true,
       "topics": [
         "docker",
@@ -159,7 +159,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "Pingdom",
-      "category": "Notes & Docs",
+      "category": "Monitoring",
       "has_docker": true,
       "topics": [
         "docker",
@@ -185,8 +185,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "Calendly",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -221,7 +221,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "CMS & Blogging",
+      "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
         "docker",
@@ -250,7 +250,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "Heroku / Vercel",
-      "category": "Database",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "coolify",
@@ -285,7 +285,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "chromadb",
@@ -320,7 +320,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "GitHub",
-      "category": "DevOps & Git",
+      "category": "Git & Code Hosting",
       "has_docker": false,
       "topics": [
         "bitbucket",
@@ -355,7 +355,7 @@
       "last_updated": "2026-10-22",
       "license": "BSD-3-Clause",
       "saas_alternative": "Firebase",
-      "category": "Chat & Messaging",
+      "category": "Backend / BaaS",
       "has_docker": true,
       "topics": [
         "android",
@@ -390,7 +390,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Database",
       "has_docker": false,
       "topics": [
         "ai",
@@ -422,7 +422,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-framework",
@@ -457,7 +457,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "GitHub",
-      "category": "Database",
+      "category": "Git & Code Hosting",
       "has_docker": true,
       "topics": [
         "docker",
@@ -482,7 +482,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Notion",
       "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
@@ -507,8 +507,8 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "saas_alternative": "ChatGPT",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "chatgpt",
@@ -531,7 +531,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "agent-skills",
@@ -555,8 +555,8 @@
       "language": "HTML",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
-      "category": "Project Management",
+      "saas_alternative": "Retool",
+      "category": "Low-Code & Internal Tools",
       "has_docker": true,
       "topics": [
         "ai-app-builder",
@@ -588,8 +588,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "",
-      "category": "Database",
+      "saas_alternative": "Retool",
+      "category": "Low-Code & Internal Tools",
       "has_docker": false,
       "topics": [
         "admin-dashboard",
@@ -624,7 +624,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "Google Photos",
-      "category": "File Storage",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "ai",
@@ -680,8 +680,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
-      "category": "Database",
+      "saas_alternative": "Heroku / Vercel",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "agents",
@@ -712,8 +712,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -748,7 +748,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Project Management",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "aggregator",
@@ -777,7 +777,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "casaos",
@@ -802,7 +802,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "analytics",
@@ -836,7 +836,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -867,7 +867,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Resource Lists",
       "has_docker": false,
       "topics": [
         "awesome",
@@ -891,7 +891,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "back-in-stock",
@@ -926,7 +926,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "docker",
@@ -948,7 +948,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -976,8 +976,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
-      "category": "Analytics",
+      "saas_alternative": "Datadog",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "apm",
@@ -1012,7 +1012,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Home Automation",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-skills",
@@ -1046,8 +1046,8 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Heroku",
-      "category": "DevOps & Git",
+      "saas_alternative": "Heroku / Vercel",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "buildpack",
@@ -1072,8 +1072,8 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -1108,7 +1108,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Project Management",
+      "category": "Auth & Security",
       "has_docker": false,
       "topics": [
         "ai-agents",
@@ -1140,8 +1140,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
-      "category": "Notes & Docs",
+      "saas_alternative": "Pocket / Instapaper",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "bookmark-manager",
@@ -1163,7 +1163,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Auth & Security",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "alpine",
@@ -1197,7 +1197,7 @@
       "language": "Elixir",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Google Analytics",
       "category": "Analytics",
       "has_docker": false,
       "topics": [
@@ -1233,7 +1233,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "CMS & Blogging",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "archivebox",
@@ -1267,8 +1267,8 @@
       "language": "Shell",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
-      "category": "DevOps & Git",
+      "saas_alternative": "NordVPN",
+      "category": "Networking",
       "has_docker": false,
       "topics": [
         "alpine-linux",
@@ -1303,7 +1303,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Project Management",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "awesome",
@@ -1330,8 +1330,8 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Notes & Docs",
+      "saas_alternative": "",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "homelab",
@@ -1349,7 +1349,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "Zapier",
-      "category": "Chat & Messaging",
+      "category": "Automation",
       "has_docker": false,
       "topics": [
         "ai-agents",
@@ -1380,7 +1380,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "CRM & Marketing",
+      "category": "Low-Code & Internal Tools",
       "has_docker": false,
       "topics": [
         "admin-dashboard",
@@ -1413,8 +1413,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Docker Hub",
-      "category": "Notes & Docs",
+      "saas_alternative": "",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "docker",
@@ -1442,7 +1442,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "Spotify",
-      "category": "Backend / BaaS",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "airsonic",
@@ -1471,7 +1471,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "Mailchimp",
-      "category": "CRM & Marketing",
+      "category": "Email",
       "has_docker": false,
       "topics": [
         "campaign",
@@ -1498,8 +1498,8 @@
       "language": "Dockerfile",
       "last_updated": "2026-10-22",
       "license": "",
-      "saas_alternative": "Calendly",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "Resource Lists",
       "has_docker": true,
       "topics": [
         "authentication",
@@ -1534,7 +1534,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Auth & Security",
+      "category": "Networking",
       "has_docker": false,
       "topics": [
         "ai-gateway",
@@ -1569,7 +1569,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "Auth & Security",
       "has_docker": false,
       "topics": [
         "api-gateway",
@@ -1604,7 +1604,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Other",
       "has_docker": true,
       "topics": [
         "docker",
@@ -1628,7 +1628,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Database",
       "has_docker": false,
       "topics": [
         "bigquery",
@@ -1662,8 +1662,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "",
-      "saas_alternative": "Calendly",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "Resource Lists",
       "has_docker": false,
       "topics": [
         "nebula",
@@ -1688,7 +1688,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -1709,7 +1709,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Google Docs",
+      "saas_alternative": "Pocket / Instapaper",
       "category": "Productivity",
       "has_docker": false,
       "topics": [
@@ -1733,7 +1733,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Forms & Documents",
       "has_docker": false,
       "topics": [
         "bun",
@@ -1761,7 +1761,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "DocuSign",
-      "category": "DevOps & Git",
+      "category": "Forms & Documents",
       "has_docker": false,
       "topics": [
         "document-signing",
@@ -1788,8 +1788,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "GitHub",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -1815,7 +1815,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Automation",
       "has_docker": false,
       "topics": [
         "agents",
@@ -1879,7 +1879,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -1926,8 +1926,8 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
-      "category": "Notes & Docs",
+      "saas_alternative": "Adobe Acrobat",
+      "category": "Forms & Documents",
       "has_docker": true,
       "topics": [
         "adobe-acrobat",
@@ -1961,8 +1961,8 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
-      "category": "File Storage",
+      "saas_alternative": "Pushover",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "api",
@@ -1990,7 +1990,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
         "api",
@@ -2017,7 +2017,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "docker",
@@ -2044,7 +2044,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "DocuSign",
-      "category": "Database",
+      "category": "Forms & Documents",
       "has_docker": false,
       "topics": [
         "digital-signature",
@@ -2076,8 +2076,8 @@
       "language": "Java",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
-      "category": "DevOps & Git",
+      "saas_alternative": "GitHub",
+      "category": "Git & Code Hosting",
       "has_docker": false,
       "topics": [
         "ai",
@@ -2100,8 +2100,8 @@
       "language": "",
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
-      "saas_alternative": "Zapier",
-      "category": "Automation",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -2121,7 +2121,7 @@
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "cachet",
@@ -2180,8 +2180,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Google Docs",
-      "category": "Auth & Security",
+      "saas_alternative": "",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "budget-tracker",
@@ -2249,7 +2249,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "audiobook-manager",
@@ -2268,8 +2268,8 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Tableau / Looker",
-      "category": "Auth & Security",
+      "saas_alternative": "",
+      "category": "Productivity",
       "has_docker": true,
       "topics": [
         "bodyweight",
@@ -2302,7 +2302,7 @@
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
       "saas_alternative": "Zapier",
-      "category": "Backend / BaaS",
+      "category": "Automation",
       "has_docker": false,
       "topics": [
         "automation",
@@ -2324,7 +2324,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "emulation",
@@ -2343,8 +2343,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "Database",
+      "saas_alternative": "",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "meal-plans",
@@ -2362,7 +2362,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "alerting",
@@ -2418,7 +2418,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "Trello",
-      "category": "Analytics",
+      "category": "Project Management",
       "has_docker": true,
       "topics": [
         "collaboration",
@@ -2440,7 +2440,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "bitcoin",
@@ -2467,7 +2467,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "Monitoring",
       "has_docker": true,
       "topics": [
         "alerting",
@@ -2501,8 +2501,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "Firebase",
-      "category": "CMS & Blogging",
+      "saas_alternative": "Retool",
+      "category": "Low-Code & Internal Tools",
       "has_docker": false,
       "topics": [
         "aiagent",
@@ -2533,7 +2533,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "annotations",
@@ -2567,8 +2567,8 @@
       "language": "Go",
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
-      "saas_alternative": "NordVPN",
-      "category": "File Storage",
+      "saas_alternative": "Tailscale",
+      "category": "Networking",
       "has_docker": true,
       "topics": [
         "cloud",
@@ -2603,7 +2603,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Project Management",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "dashboard",
@@ -2624,7 +2624,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Networking",
       "has_docker": true,
       "topics": [
         "code-completion",
@@ -2654,7 +2654,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "activitypub",
@@ -2684,7 +2684,7 @@
       "language": "Rust",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "Calendly",
+      "saas_alternative": "ngrok",
       "category": "Networking",
       "has_docker": false,
       "topics": [
@@ -2707,8 +2707,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "Calendly",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -2741,8 +2741,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Pocket",
-      "category": "Notes & Docs",
+      "saas_alternative": "Pocket / Instapaper",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "bookmark-manager",
@@ -2761,7 +2761,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Home Automation",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -2812,8 +2812,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "saas_alternative": "ChatGPT",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -2844,7 +2844,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Monitoring",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "google-maps",
@@ -2868,7 +2868,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Finance & ERP",
       "has_docker": false,
       "topics": [
         "analytics",
@@ -2900,8 +2900,8 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "Backend / BaaS",
+      "saas_alternative": "",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "ffmpeg",
@@ -2931,7 +2931,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "alternative",
@@ -3011,7 +3011,7 @@
       "last_updated": "2026-10-22",
       "license": "",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Resource Lists",
       "has_docker": false,
       "topics": [
         "awesome",
@@ -3058,7 +3058,7 @@
       "last_updated": "2026-10-22",
       "license": "CC0-1.0",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Resource Lists",
       "has_docker": false,
       "topics": [
         "awesome",
@@ -3079,7 +3079,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Monitoring",
       "has_docker": true,
       "topics": [
         "alerting",
@@ -3133,7 +3133,7 @@
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Home Automation",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "homeserver",
@@ -3170,7 +3170,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -3200,7 +3200,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "Bugsnag / Rollbar",
-      "category": "Notes & Docs",
+      "category": "Monitoring",
       "has_docker": true,
       "topics": [
         "docker",
@@ -3223,7 +3223,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "E-commerce & ERP",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "erp",
@@ -3246,7 +3246,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "",
+      "saas_alternative": "Jira",
       "category": "Project Management",
       "has_docker": false,
       "topics": [
@@ -3273,7 +3273,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Auth & Security",
       "has_docker": false,
       "topics": [
         "acme",
@@ -3308,7 +3308,7 @@
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "apm",
@@ -3333,8 +3333,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "academia",
@@ -3368,8 +3368,8 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "Finance",
+      "saas_alternative": "",
+      "category": "Finance & ERP",
       "has_docker": false,
       "topics": [
         "macos-app",
@@ -3388,7 +3388,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Database",
       "has_docker": true,
       "topics": [
         "backup",
@@ -3422,7 +3422,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Other",
       "has_docker": true,
       "topics": [
         "dashboard",
@@ -3454,7 +3454,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Project Management",
       "has_docker": false,
       "topics": [
         "laravel",
@@ -3477,7 +3477,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "Other",
       "has_docker": true,
       "topics": [
         "ai-agents",
@@ -3539,8 +3539,8 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "Calendly",
-      "category": "Database",
+      "saas_alternative": "",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "agents",
@@ -3572,7 +3572,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Finance & ERP",
       "has_docker": true,
       "topics": [
         "budgeting",
@@ -3620,7 +3620,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-memory",
@@ -3676,8 +3676,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "Calendly",
-      "category": "Other",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "3d",
@@ -3698,8 +3698,8 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "Jira",
-      "category": "E-commerce & ERP",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-orchestration",
@@ -3725,7 +3725,7 @@
       "last_updated": "2026-10-22",
       "license": "BSD-3-Clause",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "compose",
@@ -3751,7 +3751,7 @@
       "last_updated": "2026-10-22",
       "license": "MPL-2.0",
       "saas_alternative": "",
-      "category": "Productivity",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "desktop",
@@ -3778,7 +3778,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "docker",
@@ -3806,7 +3806,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "ai-agents",
@@ -3836,7 +3836,7 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Datadog",
+      "saas_alternative": "",
       "category": "Monitoring",
       "has_docker": false,
       "topics": [
@@ -3859,7 +3859,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Productivity",
+      "category": "Deployment & Hosting",
       "has_docker": false,
       "topics": [
         "deployment",
@@ -3885,7 +3885,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "agentic-rag",
@@ -3920,7 +3920,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "agent",
@@ -3955,7 +3955,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "amf",
@@ -3987,7 +3987,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "django",
@@ -4009,7 +4009,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-gateway",
@@ -4039,7 +4039,7 @@
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Networking",
       "has_docker": true,
       "topics": [
         "cisco-ipsec",
@@ -4072,8 +4072,8 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
-      "category": "File Storage",
+      "saas_alternative": "DocuSign",
+      "category": "Forms & Documents",
       "has_docker": false,
       "topics": [
         "digital-signature",
@@ -4129,7 +4129,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Home Automation",
+      "category": "File Storage",
       "has_docker": false,
       "topics": [
         "backup",
@@ -4147,8 +4147,8 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "Calendly",
-      "category": "Database",
+      "saas_alternative": "",
+      "category": "Networking",
       "has_docker": false,
       "topics": [
         "ad-blocker",
@@ -4203,7 +4203,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Monitoring",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-framework",
@@ -4237,7 +4237,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Email",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "ai",
@@ -4306,7 +4306,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "E-commerce & ERP",
+      "category": "Finance & ERP",
       "has_docker": false,
       "topics": [
         "accounting",
@@ -4333,7 +4333,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agents",
@@ -4365,7 +4365,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Home Automation",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "homepage",
@@ -4383,7 +4383,7 @@
       "last_updated": "2026-10-22",
       "license": "BSD-3-Clause",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Developer Tools",
       "has_docker": true,
       "topics": [
         "cd",
@@ -4415,8 +4415,8 @@
       "language": "JavaScript",
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "Notes & Docs",
+      "saas_alternative": "",
+      "category": "Automation",
       "has_docker": true,
       "topics": [
         "automation",
@@ -4444,7 +4444,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "ai",
@@ -4469,7 +4469,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "CMS & Blogging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agent",
@@ -4502,8 +4502,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Jira",
-      "category": "Database",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-observability",
@@ -4533,7 +4533,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "ai-applications",
@@ -4558,7 +4558,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "cloud",
@@ -4577,8 +4577,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
-      "category": "File Storage",
+      "saas_alternative": "Airtable",
+      "category": "Low-Code & Internal Tools",
       "has_docker": false,
       "topics": [
         "airtable",
@@ -4609,7 +4609,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Networking",
       "has_docker": false,
       "topics": [
         "authentication",
@@ -4657,7 +4657,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-tools",
@@ -4690,7 +4690,7 @@
       "last_updated": "2026-10-22",
       "license": "BSD-2-Clause",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-calling",
@@ -4725,7 +4725,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agentic-ai",
@@ -4760,7 +4760,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "documentation",
@@ -4790,8 +4790,8 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Todoist / Jira",
-      "category": "Backend / BaaS",
+      "saas_alternative": "",
+      "category": "Project Management",
       "has_docker": false,
       "topics": [
         "api",
@@ -4814,7 +4814,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Finance & ERP",
       "has_docker": true,
       "topics": [
         "accounting",
@@ -4849,7 +4849,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "CMS & Blogging",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "agentic-workflow",
@@ -4884,7 +4884,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "CMS & Blogging",
       "has_docker": false,
       "topics": [
         "comment-system",
@@ -4906,7 +4906,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "app",
@@ -4926,7 +4926,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Media & Photos",
       "has_docker": true,
       "topics": [
         "audiobook-player",
@@ -4952,7 +4952,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "containers",
@@ -4977,7 +4977,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "mit-license",
@@ -5008,7 +5008,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "ai-agents",
@@ -5035,7 +5035,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "docker",
@@ -5062,7 +5062,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "agentic-ai",
@@ -5089,7 +5089,7 @@
       "last_updated": "2026-10-19",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "commenting",
@@ -5109,7 +5109,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "E-commerce & ERP",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -5140,7 +5140,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Other",
       "has_docker": true,
       "topics": [
         "docker",
@@ -5161,8 +5161,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "Calendly",
-      "category": "Chat & Messaging",
+      "saas_alternative": "Notion",
+      "category": "Database",
       "has_docker": false,
       "topics": [
         "chat",
@@ -5220,7 +5220,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "ai-agents",
@@ -5244,7 +5244,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Finance & ERP",
       "has_docker": false,
       "topics": [
         "doctrine",
@@ -5274,7 +5274,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agent",
@@ -5308,7 +5308,7 @@
       "language": "C#",
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
-      "saas_alternative": "Google Docs",
+      "saas_alternative": "",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -5344,7 +5344,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Monitoring",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-builder",
@@ -5377,7 +5377,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "CRM & Marketing",
       "has_docker": false,
       "topics": [
         "ai",
@@ -5412,7 +5412,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-2.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Media & Photos",
       "has_docker": true,
       "topics": [
         "autobrr",
@@ -5443,7 +5443,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "api",
@@ -5478,7 +5478,7 @@
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "dashboard",
@@ -5499,7 +5499,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agents",
@@ -5532,7 +5532,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Home Automation",
+      "category": "Resource Lists",
       "has_docker": false,
       "topics": [
         "agent-skills",
@@ -5567,7 +5567,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Auth & Security",
       "has_docker": false,
       "topics": [
         "angular",
@@ -5600,7 +5600,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Networking",
       "has_docker": false,
       "topics": [
         "amd64",
@@ -5626,7 +5626,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agents",
@@ -5661,7 +5661,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Automation",
       "has_docker": false,
       "topics": [
         "ai",
@@ -5686,7 +5686,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Monitoring",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "diagram",
@@ -5710,7 +5710,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "coding-statistics",
@@ -5732,7 +5732,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "Heroku / Vercel",
-      "category": "File Storage",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "ci-cd",
@@ -5790,7 +5790,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "Automation",
       "has_docker": false,
       "topics": [
         "auto-failover",
@@ -5816,7 +5816,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agentic-workflows",
@@ -5874,7 +5874,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "apm",
@@ -5928,7 +5928,7 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "Calendly",
+      "saas_alternative": "",
       "category": "Productivity",
       "has_docker": false,
       "topics": [
@@ -5973,7 +5973,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "CMS & Blogging",
+      "category": "CRM & Marketing",
       "has_docker": true,
       "topics": [
         "content-management",
@@ -6008,7 +6008,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Networking",
       "has_docker": true,
       "topics": [
         "docker",
@@ -6031,8 +6031,8 @@
       "language": "Shell",
       "last_updated": "2026-10-21",
       "license": "",
-      "saas_alternative": "Jira",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "Networking",
       "has_docker": true,
       "topics": [
         "dockerfile",
@@ -6052,8 +6052,8 @@
       "language": "Rust",
       "last_updated": "2026-10-20",
       "license": "MIT",
-      "saas_alternative": "Google Docs",
-      "category": "Database",
+      "saas_alternative": "",
+      "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
         "async",
@@ -6078,7 +6078,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Project Management",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "attendize-alternative",
@@ -6112,7 +6112,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Automation",
       "has_docker": true,
       "topics": [
         "automation",
@@ -6138,7 +6138,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "1Password",
-      "category": "File Storage",
+      "category": "Auth & Security",
       "has_docker": false,
       "topics": [
         "bitwarden",
@@ -6170,7 +6170,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "blade",
@@ -6197,7 +6197,7 @@
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "bookmarking",
@@ -6216,7 +6216,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "ai-agents",
@@ -6250,8 +6250,8 @@
       "language": "PHP",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Google Drive / Dropbox",
-      "category": "File Storage",
+      "saas_alternative": "Google Photos",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "backup-tool",
@@ -6272,8 +6272,8 @@
       "language": "Kotlin",
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "Media & Photos",
+      "saas_alternative": "",
+      "category": "File Storage",
       "has_docker": false,
       "topics": [
         "android",
@@ -6305,7 +6305,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agentic-rag",
@@ -6340,7 +6340,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Networking",
       "has_docker": true,
       "topics": [
         "adventure",
@@ -6370,8 +6370,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Notes & Docs",
+      "saas_alternative": "",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "bird-detection",
@@ -6404,7 +6404,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "ansible",
@@ -6431,7 +6431,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Finance & ERP",
       "has_docker": false,
       "topics": [
         "android",
@@ -6456,7 +6456,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "django",
@@ -6479,7 +6479,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "adreno",
@@ -6514,7 +6514,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "E-commerce & ERP",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "archival",
@@ -6534,8 +6534,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-coding-assistant",
@@ -6568,7 +6568,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "push-notifications",
@@ -6585,7 +6585,7 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
+      "saas_alternative": "",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -6641,7 +6641,7 @@
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Deployment & Hosting",
       "has_docker": false,
       "topics": [
         "bastion-host",
@@ -6670,7 +6670,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Media & Photos",
+      "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
         "live-streaming",
@@ -6691,8 +6691,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "CMS & Blogging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agent",
@@ -6726,7 +6726,7 @@
       "language": "Go",
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
-      "saas_alternative": "Calendly",
+      "saas_alternative": "",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -6757,7 +6757,7 @@
       "last_updated": "2026-10-22",
       "license": "BSD-2-Clause",
       "saas_alternative": "",
-      "category": "Project Management",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "django",
@@ -6780,7 +6780,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-observability",
@@ -6815,7 +6815,7 @@
       "last_updated": "2026-10-21",
       "license": "",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "Resource Lists",
       "has_docker": false,
       "topics": [
         "alternatives",
@@ -6849,8 +6849,8 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
-      "category": "DevOps & Git",
+      "saas_alternative": "GitHub",
+      "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
         "docker",
@@ -6875,7 +6875,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "CRM & Marketing",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agentic",
@@ -6910,7 +6910,7 @@
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Productivity",
       "has_docker": true,
       "topics": [
         "archive",
@@ -6937,7 +6937,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Monitoring",
       "has_docker": true,
       "topics": [
         "alternative",
@@ -6968,8 +6968,8 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Analytics",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -7003,8 +7003,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
-      "saas_alternative": "Calendly",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -7054,7 +7054,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "ai",
@@ -7122,7 +7122,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "backup",
@@ -7147,7 +7147,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -7174,7 +7174,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-api",
@@ -7209,7 +7209,7 @@
       "last_updated": "2026-10-20",
       "license": "",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "docker",
@@ -7228,7 +7228,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "android",
@@ -7261,7 +7261,7 @@
       "language": "Go",
       "last_updated": "2026-10-17",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
+      "saas_alternative": "ngrok",
       "category": "Networking",
       "has_docker": false,
       "topics": [
@@ -7315,7 +7315,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-2.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Automation",
       "has_docker": true,
       "topics": [
         "announce",
@@ -7348,8 +7348,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Backend / BaaS",
+      "saas_alternative": "",
+      "category": "Deployment & Hosting",
       "has_docker": false,
       "topics": [
         "action-runner",
@@ -7375,7 +7375,7 @@
       "language": "Python",
       "last_updated": "2026-10-20",
       "license": "Apache-2.0",
-      "saas_alternative": "Google Analytics",
+      "saas_alternative": "",
       "category": "Analytics",
       "has_docker": true,
       "topics": [
@@ -7403,7 +7403,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Project Management",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agentic-workflows",
@@ -7428,7 +7428,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "3d-printer",
@@ -7488,7 +7488,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "Zoom",
-      "category": "Chat & Messaging",
+      "category": "File Storage",
       "has_docker": false,
       "topics": [
         "collaboration",
@@ -7523,7 +7523,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Monitoring",
       "has_docker": true,
       "topics": [
         "analytics",
@@ -7551,7 +7551,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Networking",
       "has_docker": false,
       "topics": [
         "anthropic-compatible",
@@ -7585,8 +7585,8 @@
       "language": "Elixir",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Database",
+      "saas_alternative": "",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "bittorrent",
@@ -7606,7 +7606,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "css",
@@ -7664,7 +7664,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "Intercom",
-      "category": "Chat & Messaging",
+      "category": "CRM & Marketing",
       "has_docker": false,
       "topics": [
         "ai-agent",
@@ -7696,8 +7696,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Braze / Klaviyo",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "Email",
       "has_docker": false,
       "topics": [
         "broadcast",
@@ -7731,8 +7731,8 @@
       "language": "",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Forms & Surveys",
+      "saas_alternative": "",
+      "category": "Resource Lists",
       "has_docker": false,
       "topics": [
         "ai",
@@ -7796,8 +7796,8 @@
       "language": "Python",
       "last_updated": "2026-10-20",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "DevOps & Git",
+      "saas_alternative": "",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "ai",
@@ -7825,7 +7825,7 @@
       "last_updated": "2026-10-21",
       "license": "BSD-2-Clause",
       "saas_alternative": "",
-      "category": "Project Management",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "baby",
@@ -7847,8 +7847,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Docker Hub",
-      "category": "Notes & Docs",
+      "saas_alternative": "",
+      "category": "Other",
       "has_docker": true,
       "topics": [
         "docker",
@@ -7869,7 +7869,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Auth & Security",
       "has_docker": true,
       "topics": [
         "backblaze-b2",
@@ -7895,7 +7895,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agent",
@@ -7944,7 +7944,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "api",
@@ -7975,7 +7975,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Productivity",
       "has_docker": true,
       "topics": [
         "bookmark-manager",
@@ -8000,8 +8000,8 @@
       "language": "HTML",
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
-      "saas_alternative": "Evernote",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
         "aur",
@@ -8031,7 +8031,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
         "alternative",
@@ -8064,8 +8064,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "ai",
@@ -8100,7 +8100,7 @@
       "last_updated": "2026-10-19",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "alternatives",
@@ -8133,7 +8133,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "Plex / Netflix",
-      "category": "Notes & Docs",
+      "category": "Media & Photos",
       "has_docker": true,
       "topics": [
         "clap",
@@ -8166,7 +8166,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "books",
@@ -8189,7 +8189,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Finance & ERP",
       "has_docker": false,
       "topics": [
         "ai-agents",
@@ -8224,7 +8224,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Git & Code Hosting",
       "has_docker": true,
       "topics": [
         "docker",
@@ -8243,7 +8243,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "Plex / Netflix",
-      "category": "Database",
+      "category": "Media & Photos",
       "has_docker": true,
       "topics": [
         "docker",
@@ -8278,7 +8278,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "arr-stack",
@@ -8304,7 +8304,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -8335,7 +8335,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "mcp",
@@ -8365,7 +8365,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Other",
       "has_docker": true,
       "topics": [
         "docker",
@@ -8386,7 +8386,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "apple-health",
@@ -8461,8 +8461,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "QuickBooks",
-      "category": "Backend / BaaS",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agentic-ai",
@@ -8497,7 +8497,7 @@
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "exif",
@@ -8522,7 +8522,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "atproto",
@@ -8540,7 +8540,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Home Automation",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "ai-coding-assistant",
@@ -8562,8 +8562,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "Google Docs",
-      "category": "Backend / BaaS",
+      "saas_alternative": "",
+      "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
         "collaborative-editing",
@@ -8586,7 +8586,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agentic",
@@ -8610,7 +8610,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Media & Photos",
       "has_docker": true,
       "topics": [
         "airsonic",
@@ -8644,8 +8644,8 @@
       "language": "Dart",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "Calendly",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "Finance & ERP",
       "has_docker": false,
       "topics": [
         "accounting",
@@ -8677,7 +8677,7 @@
       "last_updated": "2026-10-22",
       "license": "",
       "saas_alternative": "",
-      "category": "Home Automation",
+      "category": "Resource Lists",
       "has_docker": false,
       "topics": [
         "awesome",
@@ -8699,7 +8699,7 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "SAP / QuickBooks",
+      "saas_alternative": "QuickBooks",
       "category": "CRM & Marketing",
       "has_docker": true,
       "topics": [
@@ -8751,7 +8751,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "chat",
@@ -8775,7 +8775,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Forms & Documents",
       "has_docker": false,
       "topics": [
         "3d-viewer",
@@ -8810,7 +8810,7 @@
       "last_updated": "2026-10-05",
       "license": "MIT",
       "saas_alternative": "NordVPN",
-      "category": "Notes & Docs",
+      "category": "Networking",
       "has_docker": true,
       "topics": [
         "docker",
@@ -8829,7 +8829,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "debian",
@@ -8851,8 +8851,8 @@
       "language": "PHP",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "Database",
       "has_docker": false,
       "topics": [
         "backup",
@@ -8887,7 +8887,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "agent-observability",
@@ -8922,7 +8922,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "CMS & Blogging",
+      "category": "Productivity",
       "has_docker": true,
       "topics": [
         "agpl",
@@ -8952,7 +8952,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ats",
@@ -8987,7 +8987,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Media & Photos",
       "has_docker": true,
       "topics": [
         "docker",
@@ -9013,7 +9013,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "bash",
@@ -9032,7 +9032,7 @@
       "last_updated": "2026-10-14",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "asciinema",
@@ -9055,7 +9055,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Auth & Security",
       "has_docker": false,
       "topics": [
         "actix-web",
@@ -9098,8 +9098,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
-      "category": "File Storage",
+      "saas_alternative": "Evernote",
+      "category": "Notes & Docs",
       "has_docker": true,
       "topics": [
         "ai-agent",
@@ -9134,7 +9134,7 @@
       "last_updated": "2026-10-20",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Media & Photos",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "aggregator",
@@ -9157,8 +9157,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -9228,7 +9228,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Productivity",
+      "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
         "ebooks",
@@ -9251,7 +9251,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Other",
       "has_docker": true,
       "topics": [
         "docker",
@@ -9297,7 +9297,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
         "collaboration",
@@ -9318,7 +9318,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Other",
       "has_docker": true,
       "topics": [
         "admin",
@@ -9353,7 +9353,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "File Storage",
       "has_docker": false,
       "topics": [
         "fastify",
@@ -9372,8 +9372,8 @@
       "language": "Rust",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "CMS & Blogging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agents",
@@ -9408,7 +9408,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -9435,7 +9435,7 @@
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "cloud",
@@ -9458,7 +9458,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Forms & Surveys",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-orchestration",
@@ -9484,7 +9484,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agents",
@@ -9518,8 +9518,8 @@
       "language": "Go",
       "last_updated": "2026-10-20",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "Backend / BaaS",
+      "saas_alternative": "",
+      "category": "Deployment & Hosting",
       "has_docker": false,
       "topics": [
         "ai",
@@ -9576,7 +9576,7 @@
       "last_updated": "2026-10-09",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "artificial-intelligence",
@@ -9600,8 +9600,8 @@
       "language": "Elm",
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
-      "saas_alternative": "Google Drive",
-      "category": "Email",
+      "saas_alternative": "",
+      "category": "Forms & Documents",
       "has_docker": false,
       "topics": [
         "dms",
@@ -9632,7 +9632,7 @@
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Resource Lists",
       "has_docker": false,
       "topics": [
         "adblock",
@@ -9667,7 +9667,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Project Management",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -9696,8 +9696,8 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "Calendly",
-      "category": "DevOps & Git",
+      "saas_alternative": "",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "artificial-intelligence",
@@ -9759,7 +9759,7 @@
       "last_updated": "2026-10-20",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "angular2",
@@ -9783,7 +9783,7 @@
       "language": "JavaScript",
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
-      "saas_alternative": "Contentful",
+      "saas_alternative": "",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -9805,8 +9805,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "Google Docs",
-      "category": "Database",
+      "saas_alternative": "",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "board",
@@ -9830,8 +9830,8 @@
       "language": "Python",
       "last_updated": "2026-10-21",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agentic-ai",
@@ -9857,7 +9857,7 @@
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "developer-selfservice",
@@ -9876,8 +9876,8 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "",
-      "category": "CRM & Marketing",
+      "saas_alternative": "Mailchimp",
+      "category": "Email",
       "has_docker": false,
       "topics": [
         "amazon-ses",
@@ -9911,7 +9911,7 @@
       "language": "Go",
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
-      "saas_alternative": "Medium / Substack",
+      "saas_alternative": "",
       "category": "Chat & Messaging",
       "has_docker": false,
       "topics": [
@@ -9947,7 +9947,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "apps",
@@ -9973,7 +9973,7 @@
       "last_updated": "2026-10-17",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "aks",
@@ -9998,7 +9998,7 @@
       "last_updated": "2026-10-22",
       "license": "",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "ai-agent",
@@ -10023,7 +10023,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-2.0",
       "saas_alternative": "Plex / Netflix",
-      "category": "Media & Video",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "android-app",
@@ -10056,7 +10056,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "3d-printing",
@@ -10081,7 +10081,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Project Management",
       "has_docker": false,
       "topics": [
         "agile",
@@ -10120,8 +10120,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-20",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Business Intelligence",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -10156,7 +10156,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "a-share",
@@ -10191,7 +10191,7 @@
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "cloudflare",
@@ -10210,8 +10210,8 @@
       "language": "Python",
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "Database",
+      "saas_alternative": "",
+      "category": "Productivity",
       "has_docker": true,
       "topics": [
         "atom",
@@ -10246,7 +10246,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "fitness",
@@ -10291,7 +10291,7 @@
       "last_updated": "2026-10-21",
       "license": "",
       "saas_alternative": "Plex / Netflix",
-      "category": "Notes & Docs",
+      "category": "Media & Photos",
       "has_docker": true,
       "topics": [
         "adguardhome",
@@ -10325,8 +10325,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Notes & Docs",
+      "saas_alternative": "",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "docker",
@@ -10353,7 +10353,7 @@
       "last_updated": "2026-10-21",
       "license": "CC0-1.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "bookmark",
@@ -10373,7 +10373,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Developer Tools",
       "has_docker": false,
       "topics": [
         "angular",
@@ -10401,7 +10401,7 @@
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "active",
@@ -10432,8 +10432,8 @@
       "language": "HTML",
       "last_updated": "2026-10-14",
       "license": "MIT",
-      "saas_alternative": "Google Drive / Dropbox",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "Resource Lists",
       "has_docker": true,
       "topics": [
         "awesome",
@@ -10454,7 +10454,7 @@
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -10488,7 +10488,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Email",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "cleaning-data",
@@ -10509,7 +10509,7 @@
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
       "saas_alternative": "Okta / Auth0",
-      "category": "Analytics",
+      "category": "Auth & Security",
       "has_docker": false,
       "topics": [
         "2fa",
@@ -10544,7 +10544,7 @@
       "last_updated": "2026-10-19",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agent",
@@ -10567,7 +10567,7 @@
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "Email",
       "has_docker": false,
       "topics": [
         "agent-email",
@@ -10623,8 +10623,8 @@
       "language": "Python",
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "File Storage",
+      "saas_alternative": "",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "music",
@@ -10643,7 +10643,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "CMS & Blogging",
+      "category": "Database",
       "has_docker": false,
       "topics": [
         "ech0",
@@ -10671,7 +10671,7 @@
       "last_updated": "2026-10-16",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Developer Tools",
       "has_docker": false,
       "topics": [
         "package-management",
@@ -10691,7 +10691,7 @@
       "last_updated": "2026-10-18",
       "license": "",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Resource Lists",
       "has_docker": false,
       "topics": [
         "curated-list",
@@ -10767,7 +10767,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Auth & Security",
       "has_docker": false,
       "topics": [
         "backup",
@@ -10816,7 +10816,7 @@
       "language": "Go",
       "last_updated": "2026-10-13",
       "license": "AGPL-3.0",
-      "saas_alternative": "",
+      "saas_alternative": "Google Analytics",
       "category": "Analytics",
       "has_docker": false,
       "topics": [
@@ -10836,7 +10836,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Developer Tools",
       "has_docker": false,
       "topics": [
         "astro",
@@ -10871,7 +10871,7 @@
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "golang",
@@ -10892,7 +10892,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "haskell",
@@ -10916,7 +10916,7 @@
       "language": "Go",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "Google Docs",
+      "saas_alternative": "Jira",
       "category": "Project Management",
       "has_docker": false,
       "topics": [
@@ -10979,7 +10979,7 @@
       "last_updated": "2026-10-20",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "E-commerce & ERP",
+      "category": "Developer Tools",
       "has_docker": false,
       "topics": [
         "ab-test",
@@ -11011,7 +11011,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Google Docs",
+      "saas_alternative": "Google Drive / Dropbox",
       "category": "File Storage",
       "has_docker": false,
       "topics": [
@@ -11046,8 +11046,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Notes & Docs",
+      "saas_alternative": "",
+      "category": "Other",
       "has_docker": true,
       "topics": [
         "docker",
@@ -11069,8 +11069,8 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "document-chat",
@@ -11172,7 +11172,7 @@
       "last_updated": "2026-10-15",
       "license": "NOASSERTION",
       "saas_alternative": "NordVPN",
-      "category": "DevOps & Git",
+      "category": "Networking",
       "has_docker": false,
       "topics": [
         "censorship",
@@ -11222,7 +11222,7 @@
       "last_updated": "2026-10-18",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -11242,7 +11242,7 @@
       "last_updated": "2026-10-21",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "charts",
@@ -11263,7 +11263,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Chat & Messaging",
       "has_docker": true,
       "topics": [
         "docker",
@@ -11284,7 +11284,7 @@
       "last_updated": "2026-10-22",
       "license": "BSD-3-Clause",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "habit-tracker",
@@ -11334,7 +11334,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "autoscaler",
@@ -11366,8 +11366,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "Calendly",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-chat",
@@ -11424,7 +11424,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Networking",
       "has_docker": false,
       "topics": [
         "cli",
@@ -11444,7 +11444,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "Calendly",
+      "saas_alternative": "",
       "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
@@ -11491,7 +11491,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Home Automation",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "ai",
@@ -11516,7 +11516,7 @@
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "expo",
@@ -11538,7 +11538,7 @@
       "last_updated": "2026-10-19",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "api-testing",
@@ -11560,7 +11560,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "CRM & Marketing",
       "has_docker": false,
       "topics": [
         "ai",
@@ -11595,7 +11595,7 @@
       "last_updated": "2026-10-22",
       "license": "ISC",
       "saas_alternative": "Plex / Netflix",
-      "category": "CMS & Blogging",
+      "category": "Media & Photos",
       "has_docker": false,
       "topics": [
         "automation",
@@ -11619,8 +11619,8 @@
       "language": "Swift",
       "last_updated": "2026-10-18",
       "license": "",
-      "saas_alternative": "Calendly",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "app",
@@ -11644,7 +11644,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "Jira",
-      "category": "Analytics",
+      "category": "Project Management",
       "has_docker": false,
       "topics": [
         "agentic",
@@ -11741,7 +11741,7 @@
       "language": "JavaScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
+      "saas_alternative": "",
       "category": "Database",
       "has_docker": true,
       "topics": [
@@ -11773,7 +11773,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "backup-management",
@@ -11802,8 +11802,8 @@
       "language": "Go",
       "last_updated": "2026-10-20",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Notes & Docs",
+      "saas_alternative": "",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "automatic",
@@ -11863,7 +11863,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
         "achievement-management",
@@ -11896,7 +11896,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "docker",
@@ -11972,7 +11972,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Home Automation",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "alternative",
@@ -12007,7 +12007,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-framework",
@@ -12031,7 +12031,7 @@
       "last_updated": "2026-10-20",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "CRM & Marketing",
+      "category": "Database",
       "has_docker": false,
       "topics": [
         "bigquery",
@@ -12066,7 +12066,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "backup-management",
@@ -12096,7 +12096,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Automation",
       "has_docker": true,
       "topics": [
         "automation",
@@ -12122,8 +12122,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-21",
       "license": "LGPL-3.0",
-      "saas_alternative": "Google Docs",
-      "category": "Forms & Surveys",
+      "saas_alternative": "",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "excalidash",
@@ -12144,7 +12144,7 @@
       "last_updated": "2026-10-20",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "Project Management",
       "has_docker": false,
       "topics": [
         "freesoftware",
@@ -12167,7 +12167,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Database",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "agents",
@@ -12189,8 +12189,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
-      "saas_alternative": "Calendly",
-      "category": "Backend / BaaS",
+      "saas_alternative": "",
+      "category": "Networking",
       "has_docker": false,
       "topics": [
         "api-server",
@@ -12214,7 +12214,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Project Management",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -12241,7 +12241,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "docker",
@@ -12271,7 +12271,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -12296,7 +12296,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-chatbot",
@@ -12327,8 +12327,8 @@
       "language": "JavaScript",
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
-      "saas_alternative": "Pushover",
-      "category": "Chat & Messaging",
+      "saas_alternative": "",
+      "category": "Automation",
       "has_docker": false,
       "topics": [
         "appartment",
@@ -12361,7 +12361,7 @@
       "last_updated": "2026-10-21",
       "license": "BSD-2-Clause",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Monitoring",
       "has_docker": false,
       "topics": [
         "devops-tools",
@@ -12394,7 +12394,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agentic-ai",
@@ -12428,8 +12428,8 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "MIT",
-      "saas_alternative": "Calendly",
-      "category": "Project Management",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -12462,7 +12462,7 @@
       "language": "TypeScript",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "GitHub Actions",
+      "saas_alternative": "",
       "category": "Analytics",
       "has_docker": true,
       "topics": [
@@ -12497,7 +12497,7 @@
       "last_updated": "2026-10-21",
       "license": "GPL-2.0",
       "saas_alternative": "",
-      "category": "Email",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "mail",
@@ -12515,7 +12515,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Project Management",
+      "category": "Monitoring",
       "has_docker": true,
       "topics": [
         "alternative-to",
@@ -12542,7 +12542,7 @@
       "last_updated": "2026-10-22",
       "license": "0BSD",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "ai-agent",
@@ -12562,7 +12562,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Other",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "hermes",
@@ -12585,7 +12585,7 @@
       "last_updated": "2026-10-22",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "CMS & Blogging",
+      "category": "Resource Lists",
       "has_docker": true,
       "topics": [
         "content",
@@ -12620,7 +12620,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "angular",
@@ -12699,7 +12699,7 @@
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "bloom",
@@ -12721,7 +12721,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "chartjs",
@@ -12748,7 +12748,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "cdc",
@@ -12783,7 +12783,7 @@
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Notes & Docs",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agents",
@@ -12838,7 +12838,7 @@
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "asset-tracker",
@@ -12859,7 +12859,7 @@
       "last_updated": "2026-10-17",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "enterprise-ai",
@@ -12886,7 +12886,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "chinese-fonts",
@@ -12910,7 +12910,7 @@
       "last_updated": "2026-10-21",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agents",
@@ -12945,7 +12945,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Home Automation",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent",
@@ -12980,7 +12980,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "CMS & Blogging",
+      "category": "Homelab & Dashboards",
       "has_docker": false,
       "topics": [
         "1panel",
@@ -13015,7 +13015,7 @@
       "last_updated": "2026-10-21",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Monitoring",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -13038,8 +13038,8 @@
       "language": "Java",
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
-      "saas_alternative": "Google Photos",
-      "category": "Analytics",
+      "saas_alternative": "",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "docker",
@@ -13074,7 +13074,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Other",
       "has_docker": true,
       "topics": [
         "audio-converter",
@@ -13100,7 +13100,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "docker",
@@ -13121,7 +13121,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agent",
@@ -13179,7 +13179,7 @@
       "last_updated": "2026-10-19",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "Analytics",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "app-reviews",
@@ -13214,7 +13214,7 @@
       "last_updated": "2026-10-22",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Monitoring",
+      "category": "Productivity",
       "has_docker": false,
       "topics": [
         "open-source",
@@ -13235,7 +13235,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai",
@@ -13270,7 +13270,7 @@
       "last_updated": "2026-10-18",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Backend / BaaS",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "android",
@@ -13304,8 +13304,8 @@
       "language": "Python",
       "last_updated": "2026-10-22",
       "license": "AGPL-3.0",
-      "saas_alternative": "Calendly",
-      "category": "CMS & Blogging",
+      "saas_alternative": "",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agent",
@@ -13338,7 +13338,7 @@
       "last_updated": "2026-10-22",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "Deployment & Hosting",
       "has_docker": false,
       "topics": [
         "devops",
@@ -13373,7 +13373,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "DevOps & Git",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agents",
@@ -13395,8 +13395,8 @@
       "language": "Python",
       "last_updated": "2026-10-18",
       "license": "MIT",
-      "saas_alternative": "Datadog",
-      "category": "Backend / BaaS",
+      "saas_alternative": "",
+      "category": "Homelab & Dashboards",
       "has_docker": true,
       "topics": [
         "adguard-home",
@@ -13431,7 +13431,7 @@
       "last_updated": "2026-10-21",
       "license": "AGPL-3.0",
       "saas_alternative": "",
-      "category": "CRM & Marketing",
+      "category": "Deployment & Hosting",
       "has_docker": true,
       "topics": [
         "booking",
@@ -13466,7 +13466,7 @@
       "last_updated": "2026-10-22",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Forms & Surveys",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "agent-collaboration",
@@ -13501,7 +13501,7 @@
       "last_updated": "2026-10-17",
       "license": "NOASSERTION",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ai-agents",
@@ -13536,7 +13536,7 @@
       "last_updated": "2026-10-13",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "Chat & Messaging",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "active-speaker-detection",
@@ -13571,7 +13571,7 @@
       "last_updated": "2026-10-21",
       "license": "MIT",
       "saas_alternative": "",
-      "category": "CRM & Marketing",
+      "category": "AI & LLMs",
       "has_docker": false,
       "topics": [
         "ad-generator",
@@ -13629,7 +13629,7 @@
       "last_updated": "2026-10-17",
       "license": "Apache-2.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "AI & LLMs",
       "has_docker": true,
       "topics": [
         "agent-framework",
@@ -13664,7 +13664,7 @@
       "last_updated": "2026-09-26",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "File Storage",
+      "category": "Resource Lists",
       "has_docker": true,
       "topics": [
         "awesome",
@@ -13698,7 +13698,7 @@
       "last_updated": "2026-02-20",
       "license": "GPL-3.0",
       "saas_alternative": "",
-      "category": "Media & Photos",
+      "category": "Other",
       "has_docker": false,
       "topics": [
         "animal-crossing",
