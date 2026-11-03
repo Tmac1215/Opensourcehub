@@ -330,6 +330,10 @@ def main() -> None:
     )
     log.info("Saved → %s", OUTPUT_PATH)
 
+    # Apply hand-checked overrides and stricter category rules (see curate.py)
+    from curate import curate_file
+    curate_file(OUTPUT_PATH)
+
 
 if __name__ == "__main__":
     main()
