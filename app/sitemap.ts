@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { getSaasAlternatives, saasToSlug } from '@/lib/software'
+import { getSaasAlternatives, getSoftwareBySaas, saasToSlug } from '@/lib/software'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://www.saasalternatives.online'
 
@@ -16,12 +16,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.3 },
   ]
 
-  const alternativePages: MetadataRoute.Sitemap = getSaasAlternatives().map((saas) => ({
-    url: `${SITE_URL}/alternative/${saasToSlug(saas)}`,
-    lastModified: now,
-    changeFrequency: 'weekly',
-    priority: 0.7,
-  }))
+  // Only list alternative pages that have at least 2 tools; one-tool pages are too thin to be worth indexing.
+  const alternativePages: MetadataRoute.Sitemap = getSaasAlternatives()
+    .filter((saas) => getSoftwareBySaas(saas).length >= 2)
+    .map((saas) => ({
+      url: `${SITE_URL}/alternative/${saasToSlug(saas)}`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    }))
 
   return [...staticPages, ...alternativePages]
 }
