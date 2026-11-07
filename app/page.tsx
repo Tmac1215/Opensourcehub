@@ -44,6 +44,7 @@ export default function HomePage() {
 
   return (
     <div className="min-h-screen bg-slate-950">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({"@context":"https://schema.org","@type":"Organization","name":"OpenSourceHub","url":"https://www.saasalternatives.online/","description":"500+ self-hosted, open-source alternatives to popular SaaS products with Docker deploys."})}} />
 
       {/* ── Top Leaderboard Ad ─────────────────────────────────────────────── */}
       <div className="bg-slate-900/60 py-3 border-b border-slate-800/60 flex justify-center">
