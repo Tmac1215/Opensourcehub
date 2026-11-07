@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Star, ExternalLink, Shield, Server, Calendar, Code2 } from 'lucide-react';
 import { type Software, formatStars, formatDate, saasToSlug } from '@/lib/software';
+import { DEPLOY_PROVIDER, isLive } from '@/lib/affiliates';
 
 interface Props {
   software: Software;
@@ -24,9 +25,9 @@ const LANG_COLOR: Record<string, string> = {
   Elixir:     'bg-purple-500',
 };
 
-// Replace YOUR_REF with a real referral code to show the Deploy button.
-const DEPLOY_URL = 'https://www.digitalocean.com/?refcode=YOUR_REF';
-const SHOW_DEPLOY = !DEPLOY_URL.includes('YOUR_REF');
+// The Deploy button appears once a real referral link is set in lib/affiliates.ts
+const DEPLOY_URL = DEPLOY_PROVIDER.url;
+const SHOW_DEPLOY = isLive(DEPLOY_URL);
 
 export default function SoftwareCard({ software: s, highlighted = false }: Props) {
   return (
@@ -104,6 +105,7 @@ export default function SoftwareCard({ software: s, highlighted = false }: Props
             href={s.github_url}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`${s.name} on GitHub`}
             className="inline-flex items-center gap-1 text-xs px-3 py-1.5 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-300 hover:text-white transition-colors font-medium"
           >
             <Code2 className="w-3 h-3" />
@@ -114,6 +116,7 @@ export default function SoftwareCard({ software: s, highlighted = false }: Props
               href={DEPLOY_URL}
               target="_blank"
               rel="noopener noreferrer sponsored"
+              aria-label={`Deploy ${s.name} (sponsored link)`}
               className="inline-flex items-center gap-1 text-xs px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/20 transition-colors font-medium"
             >
               <ExternalLink className="w-3 h-3" />

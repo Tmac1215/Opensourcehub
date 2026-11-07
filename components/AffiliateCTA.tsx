@@ -1,44 +1,15 @@
 import { Rocket, ArrowRight, Server } from 'lucide-react';
+import { AFFILIATE_PROVIDERS as PROVIDERS, isLive, type ProviderKey } from '@/lib/affiliates';
 
-interface Provider {
-  name: string;
-  price: string;
-  credit: string;
-  url: string;
-  gradient: string;
-  badge: string;
+/** True when this provider has a real referral link (not the YOUR_REF placeholder). */
+export function isProviderLive(provider: ProviderKey): boolean {
+  return isLive(PROVIDERS[provider].url);
 }
 
-const PROVIDERS: Record<string, Provider> = {
-  digitalocean: {
-    name: 'DigitalOcean',
-    price: '$5/mo',
-    credit: '$200 free credit',
-    url: 'https://www.digitalocean.com/?refcode=YOUR_REF&utm_campaign=Referral_Invite',
-    gradient: 'from-blue-600 via-blue-500 to-indigo-600',
-    badge: 'Most Popular',
-  },
-  vultr: {
-    name: 'Vultr',
-    price: '$5/mo',
-    credit: '$100 free credit',
-    url: 'https://www.vultr.com/?ref=YOUR_REF',
-    gradient: 'from-indigo-600 via-violet-600 to-purple-700',
-    badge: 'Best Value',
-  },
-  linode: {
-    name: 'Akamai / Linode',
-    price: '$5/mo',
-    credit: '$100 free credit',
-    url: 'https://www.linode.com/?r=YOUR_REF',
-    gradient: 'from-emerald-600 via-teal-600 to-cyan-700',
-    badge: 'Battle-tested',
-  },
-};
 
 interface Props {
   softwareName?: string;
-  provider?: keyof typeof PROVIDERS;
+  provider?: ProviderKey;
   compact?: boolean;
 }
 
@@ -46,7 +17,7 @@ export default function AffiliateCTA({ softwareName, provider = 'digitalocean', 
   const p = PROVIDERS[provider];
 
   // Hide until a real referral code replaces the YOUR_REF placeholder.
-  if (p.url.includes('YOUR_REF')) return null;
+  if (!isLive(p.url)) return null;
 
   if (compact) {
     return (

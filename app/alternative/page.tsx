@@ -3,10 +3,12 @@ import Link from 'next/link';
 import { ArrowRight, Search, Star } from 'lucide-react';
 import { getSaasAlternatives, getSoftwareBySaas, saasToSlug, formatStars } from '@/lib/software';
 
+const alternativeCount = getSaasAlternatives().length;
+
 export const metadata: Metadata = {
-  title: 'All Open-Source Alternatives — Browse by SaaS Tool',
-  description:
-    'Browse all SaaS tools we cover. Find free, self-hosted, open-source alternatives to every major software product.',
+  title: 'Open-Source Alternatives by SaaS Tool',
+  description: `Browse open-source, self-hosted alternatives to ${alternativeCount} popular SaaS products, from Google Analytics and Notion to Zapier and ChatGPT.`,
+  alternates: { canonical: '/alternative' },
 };
 
 export default function AlternativeIndexPage() {
@@ -26,8 +28,8 @@ export default function AlternativeIndexPage() {
             <span className="text-emerald-400">Tool by Tool</span>
           </h1>
           <p className="text-slate-400 text-lg">
-            Every page lists the best free, self-hosted replacements for a single SaaS product —
-            with comparison tables, quickstart guides, and deploy instructions.
+            Every page lists the free, self-hosted replacements we track for a single SaaS product,
+            sorted by GitHub popularity, with a comparison table and typical setup steps.
           </p>
         </div>
 
@@ -63,7 +65,7 @@ export default function AlternativeIndexPage() {
                     </div>
                     <div className="min-w-0">
                       <p className="text-white text-xs font-semibold truncate">{topPick.name}</p>
-                      <p className="text-slate-500 text-xs">{formatStars(topPick.stars)} stars</p>
+                      <p className="text-slate-400 text-xs">{formatStars(topPick.stars)} stars</p>
                     </div>
                   </div>
                 )}

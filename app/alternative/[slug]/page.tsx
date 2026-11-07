@@ -8,16 +8,21 @@ import {
 
 import {
   getSaasAlternatives,
+  getSaasAlternativesByPopularity,
   getSoftwareBySaas,
   saasToSlug,
   slugToSaas,
   formatStars,
+  formatDate,
+  displayLicense,
+  getGeneratedAt,
   getSiteUrl,
   type Software,
 } from '@/lib/software';
+import { liveProviders, PLAIN_LINKS } from '@/lib/affiliates';
 import SoftwareCard from '@/components/SoftwareCard';
-import AffiliateCTA from '@/components/AffiliateCTA';
-import AdSlot from '@/components/AdSlot';
+import AffiliateCTA, { isProviderLive } from '@/components/AffiliateCTA';
+import AdSlot, { ADS_ENABLED } from '@/components/AdSlot';
 
 // ── Static params (build-time SSG) ───────────────────────────────────────────
 
@@ -35,64 +40,122 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   const tools = getSoftwareBySaas(saas);
   const year  = new Date().getFullYear();
+  const thin  = tools.length < 2; // single-tool pages stay out of search results
 
   return {
-    title: `${tools.length} Best Open-Source Alternatives to ${saas} in ${year}`,
-    description: `Discover the ${tools.length} best free, self-hosted alternatives to ${saas}. Full data ownership, deploy with Docker, no vendor lock-in.`,
+    title: `Best Open-Source ${saas} Alternatives (${year})`,
+    description: `${tools.length} free, self-hosted alternative${tools.length === 1 ? '' : 's'} to ${saas}, ranked by GitHub stars. Compare licenses, languages and Docker support.`,
     openGraph: {
       title: `Open-Source Alternatives to ${saas} (${year})`,
-      description: `${tools.length} free, self-hosted alternatives to ${saas}. Self-host in minutes.`,
+      description: `${tools.length} free, self-hosted alternative${tools.length === 1 ? '' : 's'} to ${saas}.`,
       type: 'article',
-      url: `${getSiteUrl()}/alternative/${params.slug}`,
+      url: `/alternative/${params.slug}`,
+      siteName: 'OpenSourceHub',
+      locale: 'en_US',
     },
     alternates: {
       canonical: `/alternative/${params.slug}`,
     },
+    robots: thin ? { index: false, follow: true } : undefined,
   };
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
 
+// General comparison of self-hosting vs. the commercial service. Individual projects vary.
 const FEATURE_ROWS = [
-  { feature: 'Free to use (forever)',          os: true,  saas: false },
-  { feature: 'Self-hosted / private data',     os: true,  saas: false },
-  { feature: 'Open source (auditable code)',   os: true,  saas: false },
-  { feature: 'No vendor lock-in',              os: true,  saas: false },
-  { feature: 'Docker / 1-click deploy',        os: true,  saas: false },
-  { feature: 'Unlimited users / events',       os: true,  saas: false },
-  { feature: 'Custom domain & branding',       os: true,  saas: true  },
-  { feature: 'Managed updates & backups',      os: false, saas: true  },
-  { feature: 'Built-in CDN & scaling',         os: false, saas: true  },
-  { feature: 'Enterprise SLA & support',       os: false, saas: true  },
+  { feature: 'Free to self-host',                    os: true,  saas: false },
+  { feature: 'You control where your data lives',    os: true,  saas: false },
+  { feature: 'Source code available',                os: true,  saas: false },
+  { feature: 'No vendor lock-in',                    os: true,  saas: false },
+  { feature: 'No per-seat fees when self-hosted',    os: true,  saas: false },
+  { feature: 'Custom domain & branding',             os: true,  saas: true  },
+  { feature: 'Managed updates & backups',            os: false, saas: true  },
+  { feature: 'Built-in CDN & scaling',               os: false, saas: true  },
+  { feature: 'Vendor SLA & support',                 os: false, saas: true  },
 ];
 
 function getQuickstartSteps(s: Software): { cmd: string; note: string }[] {
   if (s.has_docker) {
     return [
       { cmd: `git clone ${s.github_url}`, note: 'Clone the repository to your server' },
-      { cmd: 'cp .env.example .env && nano .env', note: 'Configure environment variables' },
-      { cmd: 'docker-compose up -d', note: 'Start all services in the background' },
-      { cmd: 'open http://localhost:3000', note: 'Finish setup in the web UI' },
+      { cmd: 'cp .env.example .env', note: 'If the project provides an example config, copy it and edit the values' },
+      { cmd: 'docker compose up -d', note: 'Start the services if the project ships a compose file' },
+      { cmd: '# open the address and port listed in the README', note: 'Finish first-run setup in the web interface' },
     ];
   }
   return [
     { cmd: `git clone ${s.github_url}`, note: 'Clone the repository' },
-    { cmd: 'npm install && cp .env.example .env', note: 'Install dependencies and configure env' },
-    { cmd: 'npm run build && npm start', note: 'Build and launch the application' },
-    { cmd: 'Configure reverse proxy (nginx/Caddy)', note: 'Point your domain at the app' },
+    { cmd: '# follow the install section of the README', note: 'Requirements and commands differ for every project' },
+    { cmd: '# configure a reverse proxy such as Caddy or nginx', note: 'Point your domain at the running app' },
   ];
+}
+
+function topCounts(values: string[], limit: number): { value: string; n: number }[] {
+  const map = new Map<string, number>();
+  for (const v of values) if (v) map.set(v, (map.get(v) ?? 0) + 1);
+  return Array.from(map.entries())
+    .map(([value, n]) => ({ value, n }))
+    .sort((a, b) => b.n - a.n || a.value.localeCompare(b.value))
+    .slice(0, limit);
+}
+
+/** Plain-language summary generated from the data, so every page has unique, factual content. */
+function buildSummary(saas: string, tools: Software[]): string {
+  const n = tools.length;
+  const top = tools[0];
+  const parts: string[] = [];
+
+  parts.push(
+    `We track ${n} open-source alternative${n === 1 ? '' : 's'} to ${saas}. ` +
+    `${top.name} is the most popular with ${formatStars(top.stars)} GitHub stars` +
+    `${top.language ? ` and is written in ${top.language}` : ''}.`,
+  );
+
+  if (n > 1) {
+    const langs = topCounts(tools.map(t => t.language), 2);
+    if (langs.length > 0) {
+      parts.push(`The most common language is ${langs.map(l => `${l.value} (${l.n})`).join(' followed by ')}.`);
+    }
+  }
+
+  const licenses = topCounts(tools.map(t => displayLicense(t.license)), 2);
+  if (licenses.length > 0) {
+    parts.push(`Licenses include ${licenses.map(l => l.value).join(' and ')}; always check the license before you deploy.`);
+  }
+
+  const docker = tools.filter(t => t.has_docker).length;
+  if (docker > 0) {
+    parts.push(`${docker} of ${n} show Docker support in their repository.`);
+  }
+
+  const newest = tools.map(t => t.last_updated).filter(Boolean).sort().slice(-1)[0];
+  if (newest) {
+    parts.push(`The most recent update among them was ${formatDate(newest)}.`);
+  }
+
+  return parts.join(' ');
 }
 
 function buildJsonLd(saas: string, slug: string, tools: Software[]) {
   const siteUrl = getSiteUrl();
+  const pageUrl = `${siteUrl}/alternative/${slug}`;
   return {
     '@context': 'https://schema.org',
     '@graph': [
       {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: `${siteUrl}/` },
+          { '@type': 'ListItem', position: 2, name: 'Alternatives', item: `${siteUrl}/alternative` },
+          { '@type': 'ListItem', position: 3, name: saas, item: pageUrl },
+        ],
+      },
+      {
         '@type': 'ItemList',
         name: `Open-Source Alternatives to ${saas}`,
-        description: `The ${tools.length} best free, self-hosted alternatives to ${saas}.`,
-        url: `${siteUrl}/alternative/${slug}`,
+        description: `${tools.length} free, self-hosted alternatives to ${saas}.`,
+        url: pageUrl,
         numberOfItems: tools.length,
         itemListElement: tools.slice(0, 10).map((t, i) => ({
           '@type': 'ListItem',
@@ -102,16 +165,6 @@ function buildJsonLd(saas: string, slug: string, tools: Software[]) {
           description: t.description || undefined,
         })),
       },
-      ...tools.slice(0, 6).map(t => ({
-        '@type': 'SoftwareApplication',
-        name: t.name,
-        url: t.github_url,
-        description: t.description || undefined,
-        applicationCategory: 'WebApplication',
-        operatingSystem: 'Linux, macOS, Windows, Docker',
-        offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-        license: t.license || 'Open Source',
-      })),
     ],
   };
 }
@@ -128,9 +181,17 @@ export default function AlternativePage({ params }: { params: { slug: string } }
   const topPick  = tools[0];
   const steps    = getQuickstartSteps(topPick);
   const jsonLd   = buildJsonLd(saas, params.slug, tools);
-  const allSaas  = getSaasAlternatives();
-  const related  = allSaas.filter(s => s !== saas).slice(0, 10);
+  const related  = getSaasAlternativesByPopularity(2).filter(s => s !== saas).slice(0, 10);
   const year     = new Date().getFullYear();
+  const summary  = buildSummary(saas, tools);
+  const topLicense = displayLicense(topPick.license);
+  const dockerCount = tools.filter(t => t.has_docker).length;
+
+  // Quick Deploy links: affiliate providers appear only once a real referral link is set
+  const deployLinks = [
+    ...liveProviders().map(p => ({ name: p.name, credit: p.shortCredit, url: p.url, sponsored: true })),
+    ...PLAIN_LINKS.map(p => ({ name: p.name, credit: p.shortCredit, url: p.url, sponsored: false })),
+  ];
 
   return (
     <>
@@ -142,19 +203,21 @@ export default function AlternativePage({ params }: { params: { slug: string } }
 
       <div className="min-h-screen bg-slate-950">
 
-        {/* ── Top Ad ──────────────────────────────────────────────────────── */}
-        <div className="bg-slate-900/60 py-3 border-b border-slate-800/60 flex justify-center">
-          <AdSlot slot="alt-top" format="leaderboard" />
-        </div>
+        {/* ── Top Ad (hidden unless ads are enabled) ───────────────────────── */}
+        {ADS_ENABLED && (
+          <div className="bg-slate-900/60 py-3 border-b border-slate-800/60 flex justify-center">
+            <AdSlot slot="alt-top" format="leaderboard" />
+          </div>
+        )}
 
         {/* ── Breadcrumb ──────────────────────────────────────────────────── */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-2">
-          <nav aria-label="breadcrumb" className="flex items-center gap-2 text-sm text-slate-500">
-            <Link href="/" className="hover:text-slate-300 transition-colors">Home</Link>
-            <span>/</span>
-            <Link href="/alternative" className="hover:text-slate-300 transition-colors">Alternatives</Link>
-            <span>/</span>
-            <span className="text-slate-300 truncate">{saas}</span>
+          <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm text-slate-400">
+            <Link href="/" className="hover:text-slate-200 transition-colors">Home</Link>
+            <span aria-hidden="true">/</span>
+            <Link href="/alternative" className="hover:text-slate-200 transition-colors">Alternatives</Link>
+            <span aria-hidden="true">/</span>
+            <span className="text-slate-300 truncate" aria-current="page">{saas}</span>
           </nav>
         </div>
 
@@ -162,8 +225,8 @@ export default function AlternativePage({ params }: { params: { slug: string } }
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/20 rounded-full px-4 py-1.5 text-emerald-400 text-sm font-medium mb-6">
-              <Terminal className="w-3.5 h-3.5" />
-              {tools.length} open-source alternatives found
+              <Terminal className="w-3.5 h-3.5" aria-hidden="true" />
+              {tools.length} open-source alternative{tools.length === 1 ? '' : 's'} found
             </div>
 
             <h1 className="text-4xl sm:text-5xl font-extrabold text-white leading-tight mb-5">
@@ -175,30 +238,37 @@ export default function AlternativePage({ params }: { params: { slug: string } }
               in {year}
             </h1>
 
-            <p className="text-lg text-slate-400 mb-8 max-w-2xl leading-relaxed">
-              Stop paying for {saas}. These free, open-source tools give you full data ownership,
-              no vendor lock-in, and deploy for as little as <strong className="text-white">$5/month</strong> on your own VPS.
+            <p className="text-lg text-slate-400 mb-4 max-w-2xl leading-relaxed">
+              Looking to move off {saas}? These free, open-source tools can be self-hosted, which means you
+              keep control of your data and avoid per-seat pricing. Hosting a small instance typically
+              starts around <strong className="text-white">$5/month</strong> on a VPS.
+            </p>
+
+            <p className="text-base text-slate-400 mb-8 max-w-2xl leading-relaxed">
+              {summary}{' '}
+              <span className="text-slate-400">Data refreshed {formatDate(getGeneratedAt())}.</span>
             </p>
 
             {/* Top pick highlight card */}
             <div className="flex items-center gap-4 bg-slate-800/60 border border-slate-700/50 rounded-xl p-4 max-w-sm">
               <div className="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shrink-0">
-                <Star className="w-5 h-5 text-emerald-400 fill-current" />
+                <Star className="w-5 h-5 text-emerald-400 fill-current" aria-hidden="true" />
               </div>
               <div className="min-w-0">
-                <div className="text-xs text-slate-500 mb-0.5">Top pick</div>
+                <div className="text-xs text-slate-400 mb-0.5">Top pick</div>
                 <div className="text-white font-semibold truncate">{topPick.name}</div>
                 <div className="text-xs text-slate-400">
-                  {formatStars(topPick.stars)} ⭐ · {topPick.license || 'Open source'}
+                  {formatStars(topPick.stars)} GitHub stars{topLicense ? ` · ${topLicense}` : ''}
                 </div>
               </div>
               <a
                 href={topPick.github_url}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`View ${topPick.name} on GitHub`}
                 className="ml-auto flex items-center gap-1 text-xs text-emerald-400 hover:text-emerald-300 transition-colors shrink-0 font-medium"
               >
-                View <ExternalLink className="w-3 h-3" />
+                View <ExternalLink className="w-3 h-3" aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -213,20 +283,25 @@ export default function AlternativePage({ params }: { params: { slug: string } }
 
               {/* 1. Comparison table */}
               <section>
-                <h2 className="text-2xl font-bold text-white mb-6">
-                  Open Source vs {saas}: Full Comparison
+                <h2 className="text-2xl font-bold text-white mb-2">
+                  Self-Hosted vs {saas}: At a Glance
                 </h2>
+                <p className="text-slate-400 text-sm mb-6">
+                  A general comparison of self-hosting open-source software against the commercial service.
+                  Individual projects differ, so check each project&apos;s license and documentation.
+                </p>
                 <div className="overflow-x-auto rounded-xl border border-slate-700/50">
                   <table className="w-full text-sm">
+                    <caption className="sr-only">Comparison of self-hosted open-source tools and {saas}</caption>
                     <thead>
                       <tr className="bg-slate-800/80 border-b border-slate-700/50">
-                        <th className="text-left px-5 py-4 text-slate-300 font-semibold w-1/2">Feature</th>
-                        <th className="text-center px-5 py-4 font-semibold">
+                        <th scope="col" className="text-left px-5 py-4 text-slate-300 font-semibold w-1/2">Feature</th>
+                        <th scope="col" className="text-center px-5 py-4 font-semibold">
                           <span className="text-emerald-400 flex items-center justify-center gap-1.5">
-                            <GitFork className="w-4 h-4" /> Open Source
+                            <GitFork className="w-4 h-4" aria-hidden="true" /> Open Source
                           </span>
                         </th>
-                        <th className="text-center px-5 py-4 font-semibold">
+                        <th scope="col" className="text-center px-5 py-4 font-semibold">
                           <span className="text-blue-400">{saas}</span>
                         </th>
                       </tr>
@@ -237,16 +312,16 @@ export default function AlternativePage({ params }: { params: { slug: string } }
                           key={row.feature}
                           className={i % 2 === 0 ? 'bg-slate-900/30' : 'bg-slate-800/20'}
                         >
-                          <td className="px-5 py-3.5 text-slate-300">{row.feature}</td>
+                          <th scope="row" className="px-5 py-3.5 text-slate-300 font-normal text-left">{row.feature}</th>
                           <td className="px-5 py-3.5 text-center">
                             {row.os
-                              ? <CheckCircle2 className="w-5 h-5 text-emerald-400 mx-auto" />
-                              : <XCircle className="w-5 h-5 text-slate-600 mx-auto" />}
+                              ? <CheckCircle2 role="img" aria-label="Yes" className="w-5 h-5 text-emerald-400 mx-auto" />
+                              : <XCircle role="img" aria-label="No" className="w-5 h-5 text-slate-500 mx-auto" />}
                           </td>
                           <td className="px-5 py-3.5 text-center">
                             {row.saas
-                              ? <CheckCircle2 className="w-5 h-5 text-blue-400 mx-auto" />
-                              : <XCircle className="w-5 h-5 text-slate-600 mx-auto" />}
+                              ? <CheckCircle2 role="img" aria-label="Yes" className="w-5 h-5 text-blue-400 mx-auto" />
+                              : <XCircle role="img" aria-label="No" className="w-5 h-5 text-slate-500 mx-auto" />}
                           </td>
                         </tr>
                       ))}
@@ -255,18 +330,27 @@ export default function AlternativePage({ params }: { params: { slug: string } }
                 </div>
               </section>
 
-              {/* 2. Quickstart guide */}
+              {/* 2. Typical setup */}
               <section>
                 <h2 className="text-2xl font-bold text-white mb-2">
-                  Deploy {topPick.name} in Minutes
+                  Self-Hosting {topPick.name}: Typical Steps
                 </h2>
                 <p className="text-slate-400 mb-6">
-                  {topPick.has_docker
-                    ? 'This tool ships with Docker support — the fastest way to get a production instance running.'
-                    : 'Follow these steps to get your self-hosted instance up and running.'}
+                  These are the general steps for self-hosting a project like this. Exact commands, ports and
+                  settings differ for every project, so follow the{' '}
+                  <a
+                    href={`${topPick.github_url}#readme`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-emerald-400 hover:text-emerald-300 underline underline-offset-2"
+                  >
+                    official README
+                  </a>{' '}
+                  for {topPick.name}.
+                  {dockerCount === 0 && ' We did not detect a Docker setup for the tools on this page.'}
                 </p>
 
-                <ol className="space-y-3" aria-label="Quickstart steps">
+                <ol className="space-y-3" aria-label="Typical setup steps">
                   {steps.map((step, i) => (
                     <li key={i} className="flex gap-4 bg-slate-800/50 border border-slate-700/50 rounded-xl p-4">
                       <div className="w-8 h-8 rounded-full bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center shrink-0 text-emerald-400 font-bold text-sm">
@@ -276,25 +360,29 @@ export default function AlternativePage({ params }: { params: { slug: string } }
                         <code className="block text-slate-200 text-sm font-mono bg-slate-900/60 rounded-lg px-3 py-2 mb-1.5 overflow-x-auto">
                           {step.cmd}
                         </code>
-                        <p className="text-slate-500 text-xs">{step.note}</p>
+                        <p className="text-slate-400 text-xs">{step.note}</p>
                       </div>
                     </li>
                   ))}
                 </ol>
 
-                {/* Inline CTA */}
-                <div className="mt-6">
-                  <AffiliateCTA softwareName={topPick.name} provider="digitalocean" compact />
-                </div>
+                {/* Inline CTA (only with a real referral link) */}
+                {isProviderLive('digitalocean') && (
+                  <div className="mt-6">
+                    <AffiliateCTA softwareName={topPick.name} provider="digitalocean" compact />
+                  </div>
+                )}
               </section>
 
-              {/* 3. In-content Ad */}
-              <AdSlot slot="alt-in-content" format="banner" />
+              {/* 3. In-content Ad (hidden unless ads are enabled) */}
+              {ADS_ENABLED && <AdSlot slot="alt-in-content" format="banner" />}
 
-              {/* 4. Full affiliate CTA */}
-              <section>
-                <AffiliateCTA softwareName={topPick.name} provider="vultr" />
-              </section>
+              {/* 4. Full affiliate CTA (only with a real referral link) */}
+              {isProviderLive('vultr') && (
+                <section>
+                  <AffiliateCTA softwareName={topPick.name} provider="vultr" />
+                </section>
+              )}
 
               {/* 5. Software grid */}
               <section>
@@ -302,7 +390,7 @@ export default function AlternativePage({ params }: { params: { slug: string } }
                   All Open-Source Alternatives to {saas}
                 </h2>
                 <p className="text-slate-400 mb-6">
-                  Sorted by GitHub stars — the most popular community-backed options first.
+                  Sorted by GitHub stars, with the most popular community-backed options first.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   {tools.map((s, i) => (
@@ -316,37 +404,30 @@ export default function AlternativePage({ params }: { params: { slug: string } }
             {/* ── SIDEBAR ───────────────────────────────────────────────── */}
             <aside className="space-y-6 lg:sticky lg:top-20 lg:self-start">
 
-              {/* Sidebar Ad */}
-              <AdSlot slot="alt-sidebar-top" format="rectangle" />
+              {/* Sidebar Ad (hidden unless ads are enabled) */}
+              {ADS_ENABLED && <AdSlot slot="alt-sidebar-top" format="rectangle" />}
 
               {/* Quick Deploy widget */}
               <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-5">
                 <h3 className="text-white font-bold mb-1 flex items-center gap-2 text-sm">
-                  <Zap className="w-4 h-4 text-amber-400" />
-                  Quick Deploy
+                  <Zap className="w-4 h-4 text-amber-400" aria-hidden="true" />
+                  Where to Host
                 </h3>
                 <p className="text-slate-400 text-xs mb-4 leading-relaxed">
-                  Get a VPS and run any of these tools in under 10 minutes.
+                  A small VPS is enough to run most of these tools.
                 </p>
 
-                {(
-                  [
-                    { name: 'DigitalOcean', credit: '$200 free',  url: 'https://www.digitalocean.com/?refcode=YOUR_REF' },
-                    { name: 'Vultr',        credit: '$100 free',  url: 'https://www.vultr.com/?ref=YOUR_REF' },
-                    { name: 'Linode',       credit: '$100 free',  url: 'https://www.linode.com/?r=YOUR_REF' },
-                    { name: 'Hetzner',      credit: 'EU pricing', url: 'https://www.hetzner.com/' },
-                  ] as const
-                ).map(p => (
+                {deployLinks.map(p => (
                   <a
                     key={p.name}
                     href={p.url}
                     target="_blank"
-                    rel="noopener noreferrer sponsored"
+                    rel={p.sponsored ? 'noopener noreferrer sponsored' : 'noopener noreferrer'}
                     className="flex items-center justify-between py-2.5 border-b border-slate-700/40 last:border-0 group"
                   >
                     <span className="text-slate-300 text-sm group-hover:text-emerald-400 transition-colors">{p.name}</span>
-                    <span className="text-xs text-emerald-500 group-hover:text-emerald-400 transition-colors flex items-center gap-1">
-                      {p.credit} <ArrowRight className="w-3 h-3" />
+                    <span className="text-xs text-emerald-400 group-hover:text-emerald-300 transition-colors flex items-center gap-1">
+                      {p.credit} <ArrowRight className="w-3 h-3" aria-hidden="true" />
                     </span>
                   </a>
                 ))}
@@ -358,61 +439,63 @@ export default function AlternativePage({ params }: { params: { slug: string } }
                 <dl className="space-y-3">
                   {[
                     { label: 'Total alternatives',  value: tools.length.toString() },
-                    { label: 'Docker-ready',         value: tools.filter(t => t.has_docker).length.toString() },
-                    { label: 'Top stars',            value: formatStars(topPick.stars) + ' ⭐' },
-                    { label: 'Most popular',         value: topPick.name },
+                    ...(dockerCount > 0 ? [{ label: 'Docker detected', value: dockerCount.toString() }] : []),
+                    { label: 'Top GitHub stars',    value: formatStars(topPick.stars) },
+                    { label: 'Most popular',        value: topPick.name },
                   ].map(({ label, value }) => (
-                    <div key={label} className="flex items-center justify-between text-sm">
+                    <div key={label} className="flex items-center justify-between gap-3 text-sm">
                       <dt className="text-slate-400">{label}</dt>
-                      <dd className="text-white font-medium">{value}</dd>
+                      <dd className="text-white font-medium text-right truncate">{value}</dd>
                     </div>
                   ))}
                 </dl>
               </div>
 
               {/* Related alternatives */}
-              <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-5">
-                <h3 className="text-white font-bold mb-3 text-sm flex items-center gap-2">
-                  <Server className="w-3.5 h-3.5 text-slate-400" />
-                  More Alternatives
-                </h3>
-                <ul className="space-y-2">
-                  {related.map(s => (
-                    <li key={s}>
-                      <Link
-                        href={`/alternative/${saasToSlug(s)}`}
-                        className="text-sm text-slate-400 hover:text-emerald-400 transition-colors flex items-center gap-1 group"
-                      >
-                        <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                        {s} alternatives
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-                <Link
-                  href="/alternative"
-                  className="block mt-4 text-xs text-emerald-400 hover:text-emerald-300 transition-colors font-medium"
-                >
-                  View all alternatives →
-                </Link>
-              </div>
+              {related.length > 0 && (
+                <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-5">
+                  <h3 className="text-white font-bold mb-3 text-sm flex items-center gap-2">
+                    <Server className="w-3.5 h-3.5 text-slate-400" aria-hidden="true" />
+                    More Alternatives
+                  </h3>
+                  <ul className="space-y-2">
+                    {related.map(s => (
+                      <li key={s}>
+                        <Link
+                          href={`/alternative/${saasToSlug(s)}`}
+                          className="text-sm text-slate-400 hover:text-emerald-400 transition-colors flex items-center gap-1 group"
+                        >
+                          <ArrowRight className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" aria-hidden="true" />
+                          {s} alternatives
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link
+                    href="/alternative"
+                    className="block mt-4 text-xs text-emerald-400 hover:text-emerald-300 transition-colors font-medium"
+                  >
+                    View all alternatives →
+                  </Link>
+                </div>
+              )}
 
               {/* Security note */}
               <div className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-5">
                 <div className="flex items-start gap-3">
-                  <Shield className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" />
+                  <Shield className="w-4 h-4 text-emerald-400 mt-0.5 shrink-0" aria-hidden="true" />
                   <div>
                     <h3 className="text-white font-bold text-sm mb-1">Why Self-Host?</h3>
                     <p className="text-slate-400 text-xs leading-relaxed">
-                      Your data stays on your servers. No third-party access, no usage-based pricing,
-                      no sudden price hikes. You're in control.
+                      Your data stays on servers you control, and there is no usage-based pricing from a
+                      vendor. The trade-off: you handle updates, backups and security yourself.
                     </p>
                   </div>
                 </div>
               </div>
 
-              {/* Bottom sidebar ad */}
-              <AdSlot slot="alt-sidebar-bottom" format="rectangle" />
+              {/* Bottom sidebar ad (hidden unless ads are enabled) */}
+              {ADS_ENABLED && <AdSlot slot="alt-sidebar-bottom" format="rectangle" />}
             </aside>
 
           </div>

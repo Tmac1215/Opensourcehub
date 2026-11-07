@@ -1,18 +1,17 @@
 import Link from 'next/link';
 import { Terminal, ExternalLink } from 'lucide-react';
-import { getSaasAlternatives, saasToSlug } from '@/lib/software';
-
-const CLOUD_PROVIDERS = [
-  { name: 'DigitalOcean', credit: '$200 free credit', url: 'https://www.digitalocean.com/?refcode=YOUR_REF' },
-  { name: 'Vultr',         credit: '$100 free credit', url: 'https://www.vultr.com/?ref=YOUR_REF' },
-  { name: 'Linode / Akamai', credit: '$100 free credit', url: 'https://www.linode.com/?r=YOUR_REF' },
-  { name: 'Hetzner',       credit: 'Best EU pricing',   url: 'https://www.hetzner.com/' },
-];
+import { getSaasAlternativesByPopularity, saasToSlug } from '@/lib/software';
+import { liveProviders, hasLiveAffiliates, PLAIN_LINKS } from '@/lib/affiliates';
 
 export default function Footer() {
-  // Skip affiliate links that still have the YOUR_REF placeholder.
-  const providers = CLOUD_PROVIDERS.filter(p => !p.url.includes('YOUR_REF'));
-  const topAlts = getSaasAlternatives().slice(0, 8);
+  // Affiliate providers only appear once a real referral link is set in lib/affiliates.ts
+  const providers = [
+    ...liveProviders().map(p => ({ name: p.name, credit: p.credit, url: p.url, sponsored: true })),
+    ...PLAIN_LINKS.map(p => ({ name: p.name, credit: p.credit, url: p.url, sponsored: false })),
+  ];
+  const showAffiliateNote = hasLiveAffiliates();
+  // Link to the best-covered alternatives (pages with at least 2 tools)
+  const topAlts = getSaasAlternativesByPopularity(2).slice(0, 8);
 
   return (
     <footer className="border-t border-slate-800 bg-slate-950 mt-24">
@@ -77,7 +76,7 @@ export default function Footer() {
                   <a
                     href={p.url}
                     target="_blank"
-                    rel="noopener noreferrer sponsored"
+                    rel={p.sponsored ? 'noopener noreferrer sponsored' : 'noopener noreferrer'}
                     className="text-sm text-slate-400 hover:text-white transition-colors flex items-start gap-1 group"
                   >
                     <span className="flex-1">{p.name}</span>
@@ -124,10 +123,12 @@ export default function Footer() {
           <p className="text-xs text-slate-400">
             © {new Date().getFullYear()} OpenSourceHub. Data sourced from GitHub public API.
           </p>
-          <p className="text-xs text-slate-400">
-            Some links are affiliate links — they help keep this site free.{' '}
-            <Link href="/affiliate-disclosure" className="hover:text-white underline underline-offset-2">Disclosure</Link>
-          </p>
+          {showAffiliateNote && (
+            <p className="text-xs text-slate-400">
+              Some links are affiliate links — they help keep this site free.{' '}
+              <Link href="/affiliate-disclosure" className="hover:text-white underline underline-offset-2">Disclosure</Link>
+            </p>
+          )}
         </div>
       </div>
     </footer>

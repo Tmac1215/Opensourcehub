@@ -91,16 +91,17 @@ export default function HomeClient({ software, categories }: Props) {
     <div>
       {/* ── Search ────────────────────────────────────────────────────────── */}
       <div className="relative max-w-2xl mx-auto mb-6">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5 pointer-events-none" />
+        <Search aria-hidden="true" className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5 pointer-events-none" />
         <input
           type="search"
+          aria-label="Search tools"
           value={query}
           onChange={handleSearch}
           placeholder="Search by name, category, or SaaS alternative…"
-          className="w-full pl-12 pr-10 py-4 bg-slate-800 border border-slate-700 hover:border-slate-600 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 rounded-xl text-white placeholder-slate-500 text-base outline-none transition-all"
+          className="w-full pl-12 pr-10 py-4 bg-slate-800 border border-slate-700 hover:border-slate-600 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 rounded-xl text-white placeholder-slate-400 text-base outline-none transition-all"
         />
         {query && (
-          <button onClick={() => { setQuery(''); setPage(1); }}
+          <button type="button" aria-label="Clear search" onClick={() => { setQuery(''); setPage(1); }}
             className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white transition-colors">
             <X className="w-4 h-4" />
           </button>
@@ -115,7 +116,7 @@ export default function HomeClient({ software, categories }: Props) {
             : software.filter(s => s.stars >= min).length;
           const active = minStars === min;
           return (
-            <button key={label} onClick={() => handleStarTier(min)}
+            <button key={label} type="button" aria-pressed={active} onClick={() => handleStarTier(min)}
               className={[
                 'flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-medium transition-all',
                 active
@@ -139,7 +140,7 @@ export default function HomeClient({ software, categories }: Props) {
           .map(({ name }) => {
             const count = categoryCounts.get(name) ?? 0;
             return (
-              <button key={name} onClick={() => handleCategory(name)}
+              <button key={name} type="button" aria-pressed={activeCategory === name} onClick={() => handleCategory(name)}
                 className={[
                   'px-3 py-1.5 rounded-full text-xs font-medium transition-all',
                   activeCategory === name

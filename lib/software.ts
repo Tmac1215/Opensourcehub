@@ -47,6 +47,36 @@ export function getSaasAlternatives(): string[] {
   return Array.from(set).sort();
 }
 
+export function getGeneratedAt(): string {
+  return (rawData as SoftwareFile).generated_at;
+}
+
+/** Number of distinct licenses in the data (ignores blank / NOASSERTION). */
+export function getLicenseCount(): number {
+  const set = new Set<string>();
+  for (const s of getAllSoftware()) {
+    if (s.license && s.license !== 'NOASSERTION') set.add(s.license);
+  }
+  return set.size;
+}
+
+/** Alternatives sorted by number of tools (most first), optionally only those with at least `minTools`. */
+export function getSaasAlternativesByPopularity(minTools = 1): string[] {
+  const counts = new Map<string, number>();
+  for (const s of getAllSoftware()) {
+    if (s.saas_alternative) counts.set(s.saas_alternative, (counts.get(s.saas_alternative) ?? 0) + 1);
+  }
+  return Array.from(counts.entries())
+    .filter(([, n]) => n >= minTools)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([name]) => name);
+}
+
+/** GitHub reports 'NOASSERTION' when it cannot detect a license; show nothing in that case. */
+export function displayLicense(license: string): string {
+  return license && license !== 'NOASSERTION' ? license : '';
+}
+
 export function getPopularSoftware(limit = 24): Software[] {
   return [...getAllSoftware()]
     .sort((a, b) => b.stars - a.stars)
