@@ -2,6 +2,13 @@
 const nextConfig = {
   output: 'standalone',
   poweredByHeader: false,
+  // Duplicate homepage URLs should permanently (301) point to the canonical homepage
+  async redirects() {
+    return [
+      { source: '/index', destination: '/', statusCode: 301 },
+      { source: '/index.html', destination: '/', statusCode: 301 },
+    ];
+  },
   async headers() {
     return [
       {
