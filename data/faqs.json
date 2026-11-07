@@ -1,0 +1,31 @@
+{
+  "_comment": "Per-page FAQs, keyed by the exact SaaS label used on the alternative page (e.g. \"ChatGPT\"). Each entry needs a question and an answer. You can use these placeholders and they are filled from the live data: {saas} (the product name), {count} (number of alternatives), {top} (most popular tool), {topStars} (its GitHub stars), {tools} (list of tool names). Pages with no entry here simply show no FAQ section.",
+  "faqs": {
+    "ChatGPT": [
+      {
+        "question": "What is the best open-source alternative to {saas}?",
+        "answer": "By GitHub popularity, {top} is the most popular of the {count} alternatives we track, with {topStars} stars. Stars measure interest, not quality or fit, so look at what each tool is built for: {tools} take different approaches. Read each project's README before choosing."
+      },
+      {
+        "question": "Can I run a {saas} alternative on my own computer?",
+        "answer": "Some of them can. Jan describes itself as running 100% offline on your computer, and LlamaGPT describes itself as a self-hosted, offline chatbot with no data leaving your device. Open WebUI is a web interface that works with Ollama and the OpenAI API, so you pair it with a model source. System requirements vary, so check each project's documentation."
+      },
+      {
+        "question": "Are open-source {saas} alternatives free?",
+        "answer": "The software is free to download and self-host, but licenses differ. LlamaGPT lists the MIT license, while GitHub's license detection did not report a standard license for some of the others, so read the license file in each repository. Running them can still cost money: electricity or a server, plus fees for any paid API you connect, such as the OpenAI API."
+      },
+      {
+        "question": "Do I need a GPU to run them?",
+        "answer": "It depends on the model, not the interface. Smaller models can run on a modern CPU, though more slowly, while larger models generally need a GPU with enough memory. Tools like Open WebUI that provide the interface rely on whatever model runner or API you connect, so the hardware requirement comes from that runner."
+      },
+      {
+        "question": "Is my data private with these tools?",
+        "answer": "When both the interface and the model run on hardware you control, your prompts stay on that machine. If you connect a tool to an outside service, such as the OpenAI API, your prompts are sent to that provider and its terms apply. Check where each tool sends data before using it for sensitive work."
+      },
+      {
+        "question": "Will the answers be as good as {saas}'s?",
+        "answer": "Answer quality depends mostly on the model you run. Open models have improved quickly, but the largest commercial models may still do better on some tasks, so test an alternative on your own use cases before switching. LlamaGPT's description mentions Llama 2 and Code Llama, so check its repository for the models it currently supports."
+      }
+    ]
+  }
+}

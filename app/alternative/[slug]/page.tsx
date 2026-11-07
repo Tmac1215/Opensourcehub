@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import {
   CheckCircle2, XCircle, Terminal, Star, ExternalLink,
-  Zap, ArrowRight, Server, Shield, GitFork,
+  Zap, ArrowRight, Server, Shield, GitFork, ChevronDown,
 } from 'lucide-react';
 
 import {
@@ -15,8 +15,10 @@ import {
   formatStars,
   formatDate,
   displayLicense,
+  getFaqs,
   getGeneratedAt,
   getSiteUrl,
+  type Faq,
   type Software,
 } from '@/lib/software';
 import { liveProviders, PLAIN_LINKS } from '@/lib/affiliates';
@@ -137,7 +139,17 @@ function buildSummary(saas: string, tools: Software[]): string {
   return parts.join(' ');
 }
 
-function buildJsonLd(saas: string, slug: string, tools: Software[]) {
+/** Replace {placeholders} in FAQ text with live values so answers stay accurate after data refreshes. */
+function fillFaq(text: string, vars: Record<string, string>): string {
+  return text.replace(/\{(\w+)\}/g, (match, key) => vars[key] ?? match);
+}
+
+function joinNames(names: string[]): string {
+  if (names.length <= 1) return names.join('');
+  return `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
+}
+
+function buildJsonLd(saas: string, slug: string, tools: Software[], faqs: Faq[]) {
   const siteUrl = getSiteUrl();
   const pageUrl = `${siteUrl}/alternative/${slug}`;
   return {
@@ -151,6 +163,16 @@ function buildJsonLd(saas: string, slug: string, tools: Software[]) {
           { '@type': 'ListItem', position: 3, name: saas, item: pageUrl },
         ],
       },
+      ...(faqs.length > 0
+        ? [{
+            '@type': 'FAQPage',
+            mainEntity: faqs.map(f => ({
+              '@type': 'Question',
+              name: f.question,
+              acceptedAnswer: { '@type': 'Answer', text: f.answer },
+            })),
+          }]
+        : []),
       {
         '@type': 'ItemList',
         name: `Open-Source Alternatives to ${saas}`,
@@ -180,7 +202,18 @@ export default function AlternativePage({ params }: { params: { slug: string } }
 
   const topPick  = tools[0];
   const steps    = getQuickstartSteps(topPick);
-  const jsonLd   = buildJsonLd(saas, params.slug, tools);
+  const faqVars = {
+    saas,
+    count: String(tools.length),
+    top: topPick.name,
+    topStars: formatStars(topPick.stars),
+    tools: joinNames(tools.slice(0, 5).map(t => t.name)),
+  };
+  const faqs: Faq[] = getFaqs(saas).map(f => ({
+    question: fillFaq(f.question, faqVars),
+    answer: fillFaq(f.answer, faqVars),
+  }));
+  const jsonLd   = buildJsonLd(saas, params.slug, tools, faqs);
   const related  = getSaasAlternativesByPopularity(2).filter(s => s !== saas).slice(0, 10);
   const year     = new Date().getFullYear();
   const summary  = buildSummary(saas, tools);
@@ -398,6 +431,32 @@ export default function AlternativePage({ params }: { params: { slug: string } }
                   ))}
                 </div>
               </section>
+
+              {/* 6. FAQ (from data/faqs.json) */}
+              {faqs.length > 0 && (
+                <section aria-labelledby="faq-heading">
+                  <h2 id="faq-heading" className="text-2xl font-bold text-white mb-6">
+                    {saas} Alternatives: Frequently Asked Questions
+                  </h2>
+                  <div className="space-y-3">
+                    {faqs.map(f => (
+                      <details
+                        key={f.question}
+                        className="group rounded-xl border border-slate-700/50 bg-slate-800/40 p-5"
+                      >
+                        <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-white [&::-webkit-details-marker]:hidden">
+                          <span>{f.question}</span>
+                          <ChevronDown
+                            className="h-4 w-4 shrink-0 text-slate-400 transition-transform group-open:rotate-180"
+                            aria-hidden="true"
+                          />
+                        </summary>
+                        <p className="mt-3 leading-relaxed text-slate-300">{f.answer}</p>
+                      </details>
+                    ))}
+                  </div>
+                </section>
+              )}
 
             </div>
 

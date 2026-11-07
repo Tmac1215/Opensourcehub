@@ -1,4 +1,5 @@
 import rawData from '../data/software.json';
+import faqData from '../data/faqs.json';
 
 // ── Types ─────────────────────────────────────────────────────────────────────
 
@@ -15,6 +16,11 @@ export interface Software {
   category: string;
   has_docker: boolean;
   topics: string[];
+}
+
+export interface Faq {
+  question: string;
+  answer: string;
 }
 
 interface SoftwareFile {
@@ -45,6 +51,12 @@ export function getSaasAlternatives(): string[] {
     if (s.saas_alternative) set.add(s.saas_alternative);
   }
   return Array.from(set).sort();
+}
+
+/** FAQs for an alternative page, from data/faqs.json (empty when none are defined). */
+export function getFaqs(saas: string): Faq[] {
+  const map = (faqData as { faqs: Record<string, Faq[]> }).faqs;
+  return map[saas] ?? [];
 }
 
 export function getGeneratedAt(): string {
