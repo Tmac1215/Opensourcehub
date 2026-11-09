@@ -1,26 +1,31 @@
-"ChatGPT": [
-  {
-    "question": "What is the best open-source alternative to {saas}?",
-    "answer": "By GitHub stars, {top} leads the {count} alternatives we track with {topStars} stars. Stars show interest, not fit: {tools} take different approaches, so match the tool to your use case and read the README before you choose."
-  },
-  {
-    "question": "Can I run a {saas} alternative on my own computer?",
-    "answer": "Yes, some do. Jan describes itself as running 100% offline on your computer, and LlamaGPT describes itself as a self-hosted offline chatbot. Open WebUI is an interface for Ollama or the OpenAI API, so check each project's docs for requirements."
-  },
-  {
-    "question": "Are open-source {saas} alternatives free?",
-    "answer": "The download is free, but running is not always free. LlamaGPT lists an MIT license and other licenses vary, so read the license file in each repo. You still pay for power or hosting, plus any paid API you connect."
-  },
-  {
-    "question": "Do I need a GPU to run them?",
-    "answer": "Not always. Smaller models run on a modern CPU, larger ones usually need a GPU with enough memory. The interface does not set the requirement, the model runner you connect does."
-  },
-  {
-    "question": "Is my data private with these tools?",
-    "answer": "Only if you self-host both parts. When the interface and model run on your hardware, prompts stay local. Connect to an outside API and your prompts go to that provider under its terms."
-  },
-  {
-    "question": "Will the answers be as good as {saas}'s?",
-    "answer": "It depends on the model you pick. Open models are close for everyday writing and coding, but top commercial models can still lead on hard tasks. Test your own prompts before you switch."
+{
+  "_comment": "Per-page FAQs, keyed by the exact SaaS label used on the alternative page (e.g. \"ChatGPT\"). Each entry needs a question and an answer. You can use these placeholders and they are filled from the live data: {saas} (the product name), {count} (number of alternatives), {top} (most popular tool), {topStars} (its GitHub stars), {tools} (list of tool names). Pages with no entry here simply show no FAQ section.",
+  "faqs": {
+    "ChatGPT": [
+      {
+        "question": "What is the best open-source alternative to {saas}?",
+        "answer": "By GitHub stars, {top} leads the {count} alternatives we track with {topStars} stars. Stars show interest, not fit: {tools} take different approaches, so match the tool to your use case and read the README before you choose."
+      },
+      {
+        "question": "Can I run a {saas} alternative on my own computer?",
+        "answer": "Yes, some do. Jan describes itself as running 100% offline on your computer, and LlamaGPT describes itself as a self-hosted offline chatbot. Open WebUI is an interface for Ollama or the OpenAI API, so check each project's docs for requirements."
+      },
+      {
+        "question": "Are open-source {saas} alternatives free?",
+        "answer": "The download is free, but running is not always free. LlamaGPT lists an MIT license and other licenses vary, so read the license file in each repo. You still pay for power or hosting, plus any paid API you connect."
+      },
+      {
+        "question": "Do I need a GPU to run them?",
+        "answer": "Not always. Smaller models run on a modern CPU, larger ones usually need a GPU with enough memory. The interface does not set the requirement, the model runner you connect does."
+      },
+      {
+        "question": "Is my data private with these tools?",
+        "answer": "Only if you self-host both parts. When the interface and model run on your hardware, prompts stay local. Connect to an outside API and your prompts go to that provider under its terms."
+      },
+      {
+        "question": "Will the answers be as good as {saas}'s?",
+        "answer": "It depends on the model you pick. Open models are close for everyday writing and coding, but top commercial models can still lead on hard tasks. Test your own prompts before you switch."
+      }
+    ]
   }
-]
+}
