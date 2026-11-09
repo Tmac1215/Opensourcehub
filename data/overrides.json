@@ -1,511 +1,511 @@
 {
-  "_comment": "Hand-checked categories and SaaS alternatives. Keys are 'owner/repo' (preferred, always unambiguous) or the plain repo name. These always win over the automatic rules in curate.py. Use an empty string for 'saas_alternative' when no single SaaS product fits.",
+  "_comment": "Hand-checked categories and SaaS alternatives. Keys are 'owner/repo' (exactly as on GitHub), so a different repo that happens to share a name is never affected. These always win over the automatic rules in curate.py. Use an empty string for 'saas_alternative' when no single SaaS product fits.",
   "overrides": {
-    "awesome-selfhosted": {
+    "awesome-selfhosted/awesome-selfhosted": {
       "category": "Resource Lists",
       "saas_alternative": ""
     },
-    "n8n": {
+    "n8n-io/n8n": {
       "category": "Automation",
       "saas_alternative": "Zapier"
     },
-    "open-webui": {
+    "open-webui/open-webui": {
       "category": "AI & LLMs",
       "saas_alternative": "ChatGPT"
     },
-    "immich": {
+    "immich-app/immich": {
       "category": "Media & Photos",
       "saas_alternative": "Google Photos"
     },
-    "Stirling-PDF": {
+    "Stirling-Tools/Stirling-PDF": {
       "category": "Forms & Documents",
       "saas_alternative": "Adobe Acrobat"
     },
-    "uptime-kuma": {
+    "louislam/uptime-kuma": {
       "category": "Monitoring",
       "saas_alternative": "Pingdom"
     },
-    "unsloth": {
+    "unslothai/unsloth": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "memos": {
+    "usememos/memos": {
       "category": "Notes & Docs",
       "saas_alternative": ""
     },
-    "coolify": {
+    "coollabsio/coolify": {
       "category": "Deployment & Hosting",
       "saas_alternative": "Heroku / Vercel"
     },
-    "serviette": {
+    "pathwaycom/serviette": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "gitea": {
+    "go-gitea/gitea": {
       "category": "Git & Code Hosting",
       "saas_alternative": "GitHub"
     },
-    "appwrite": {
+    "appwrite/appwrite": {
       "category": "Backend / BaaS",
       "saas_alternative": "Firebase"
     },
-    "ClickHouse": {
+    "ClickHouse/ClickHouse": {
       "category": "Database",
       "saas_alternative": ""
     },
-    "nanobot": {
+    "HKUDS/nanobot": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "gogs": {
+    "gogs/gogs": {
       "category": "Git & Code Hosting",
       "saas_alternative": "GitHub"
     },
-    "siyuan": {
+    "siyuan-note/siyuan": {
       "category": "Notes & Docs",
       "saas_alternative": "Notion"
     },
-    "jan": {
+    "janhq/jan": {
       "category": "AI & LLMs",
       "saas_alternative": "ChatGPT"
     },
-    "reactive-resume": {
+    "reactive-resume/reactive-resume": {
       "category": "Productivity",
       "saas_alternative": ""
     },
-    "ToolJet": {
+    "ToolJet/ToolJet": {
       "category": "Low-Code & Internal Tools",
       "saas_alternative": "Retool"
     },
-    "appsmith": {
+    "appsmithorg/appsmith": {
       "category": "Low-Code & Internal Tools",
       "saas_alternative": "Retool"
     },
-    "photoprism": {
+    "photoprism/photoprism": {
       "category": "Media & Photos",
       "saas_alternative": "Google Photos"
     },
-    "Trilium": {
+    "TriliumNext/Trilium": {
       "category": "Notes & Docs",
       "saas_alternative": "Evernote"
     },
-    "dokploy": {
+    "Dokploy/dokploy": {
       "category": "Deployment & Hosting",
       "saas_alternative": "Heroku / Vercel"
     },
-    "khoj": {
+    "khoj-ai/khoj": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "glance": {
+    "glanceapp/glance": {
       "category": "Homelab & Dashboards",
       "saas_alternative": ""
     },
-    "CasaOS": {
+    "IceWhaleTech/CasaOS": {
       "category": "Homelab & Dashboards",
       "saas_alternative": ""
     },
-    "langfuse": {
+    "langfuse/langfuse": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "QwenPaw": {
+    "agentscope-ai/QwenPaw": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "awesome-sysadmin": {
+    "awesome-foss/awesome-sysadmin": {
       "category": "Resource Lists",
       "saas_alternative": ""
     },
-    "changedetection.io": {
+    "dgtlmoon/changedetection.io": {
       "category": "Monitoring",
       "saas_alternative": ""
     },
-    "homepage": {
+    "gethomepage/homepage": {
       "category": "Homelab & Dashboards",
       "saas_alternative": ""
     },
-    "onyx": {
+    "onyx-dot-app/onyx": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "signoz": {
+    "SigNoz/signoz": {
       "category": "Monitoring",
       "saas_alternative": "Datadog"
     },
-    "invisible_dots": {
+    "feder-cr/invisible_dots": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "dokku": {
+    "dokku/dokku": {
       "category": "Deployment & Hosting",
       "saas_alternative": "Heroku / Vercel"
     },
-    "meetily": {
+    "Zackriya-Solutions/meetily": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "pentagi": {
+    "vxcontrol/pentagi": {
       "category": "Auth & Security",
       "saas_alternative": ""
     },
-    "karakeep": {
+    "karakeep-app/karakeep": {
       "category": "Productivity",
       "saas_alternative": "Pocket / Instapaper"
     },
-    "ProxmoxVE": {
+    "community-scripts/ProxmoxVE": {
       "category": "Homelab & Dashboards",
       "saas_alternative": ""
     },
-    "analytics": {
+    "plausible/analytics": {
       "category": "Analytics",
       "saas_alternative": "Google Analytics"
     },
-    "ArchiveBox": {
+    "ArchiveBox/ArchiveBox": {
       "category": "Productivity",
       "saas_alternative": ""
     },
-    "setup-ipsec-vpn": {
+    "hwdsl2/setup-ipsec-vpn": {
       "category": "Networking",
       "saas_alternative": "NordVPN"
     },
-    "dashy": {
+    "lissy93/dashy": {
       "category": "Homelab & Dashboards",
       "saas_alternative": ""
     },
-    "beszel": {
+    "henrygd/beszel": {
       "category": "Monitoring",
       "saas_alternative": ""
     },
-    "awesome-n8n-templates": {
+    "enescingoz/awesome-n8n-templates": {
       "category": "Automation",
       "saas_alternative": "Zapier"
     },
-    "nocobase": {
+    "nocobase/nocobase": {
       "category": "Low-Code & Internal Tools",
       "saas_alternative": ""
     },
-    "dockge": {
+    "louislam/dockge": {
       "category": "Deployment & Hosting",
       "saas_alternative": ""
     },
-    "navidrome": {
+    "navidrome/navidrome": {
       "category": "Media & Photos",
       "saas_alternative": "Spotify"
     },
-    "listmonk": {
+    "knadh/listmonk": {
       "category": "Email",
       "saas_alternative": "Mailchimp"
     },
-    "Self-Hosting-Guide": {
+    "mikeroyal/Self-Hosting-Guide": {
       "category": "Resource Lists",
       "saas_alternative": ""
     },
-    "pangolin": {
+    "fosrl/pangolin": {
       "category": "Networking",
       "saas_alternative": ""
     },
-    "SafeLine": {
+    "chaitin/SafeLine": {
       "category": "Auth & Security",
       "saas_alternative": ""
     },
-    "neko": {
+    "m1k1o/neko": {
       "category": "Other",
       "saas_alternative": ""
     },
-    "airbyte": {
+    "airbytehq/airbyte": {
       "category": "Database",
       "saas_alternative": ""
     },
-    "awesome-tunneling": {
+    "anderspitman/awesome-tunneling": {
       "category": "Resource Lists",
       "saas_alternative": ""
     },
-    "suna": {
+    "kortix-ai/suna": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "linkwarden": {
+    "linkwarden/linkwarden": {
       "category": "Productivity",
       "saas_alternative": "Pocket / Instapaper"
     },
-    "ConvertX": {
+    "C4illin/ConvertX": {
       "category": "Forms & Documents",
       "saas_alternative": ""
     },
-    "docuseal": {
+    "docusealco/docuseal": {
       "category": "Forms & Documents",
       "saas_alternative": "DocuSign"
     },
-    "deepwiki-open": {
+    "AsyncFuncAI/deepwiki-open": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "maxun": {
+    "getmaxun/maxun": {
       "category": "Automation",
       "saas_alternative": ""
     },
-    "docs": {
+    "suitenumerique/docs": {
       "category": "Notes & Docs",
       "saas_alternative": "Google Docs"
     },
-    "SurfSense": {
+    "MODSetter/SurfSense": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "FreshRSS": {
+    "FreshRSS/FreshRSS": {
       "category": "Productivity",
       "saas_alternative": "Feedly"
     },
-    "bentopdf": {
+    "alam00000/bentopdf": {
       "category": "Forms & Documents",
       "saas_alternative": "Adobe Acrobat"
     },
-    "OpenWA": {
+    "rmyndharis/OpenWA": {
       "category": "Chat & Messaging",
       "saas_alternative": ""
     },
-    "Termix": {
+    "Termix-SSH/Termix": {
       "category": "Homelab & Dashboards",
       "saas_alternative": ""
     },
-    "documenso": {
+    "documenso/documenso": {
       "category": "Forms & Documents",
       "saas_alternative": "DocuSign"
     },
-    "onedev": {
+    "theonedev/onedev": {
       "category": "Git & Code Hosting",
       "saas_alternative": "GitHub"
     },
-    "self-hosted-ai-starter-kit": {
+    "n8n-io/self-hosted-ai-starter-kit": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "cachet": {
+    "cachethq/cachet": {
       "category": "Monitoring",
       "saas_alternative": ""
     },
-    "metube": {
+    "alexta69/metube": {
       "category": "Media & Photos",
       "saas_alternative": ""
     },
-    "openship": {
+    "oblien/openship": {
       "category": "Deployment & Hosting",
       "saas_alternative": ""
     },
-    "TREK": {
+    "liketrek/TREK": {
       "category": "Productivity",
       "saas_alternative": ""
     },
-    "notesnook": {
+    "streetwriters/notesnook": {
       "category": "Notes & Docs",
       "saas_alternative": "Evernote"
     },
-    "audiobookshelf": {
+    "advplyr/audiobookshelf": {
       "category": "Media & Photos",
       "saas_alternative": ""
     },
-    "openGym": {
+    "DuarteSantos8/openGym": {
       "category": "Productivity",
       "saas_alternative": ""
     },
-    "automatisch": {
+    "automatisch/automatisch": {
       "category": "Automation",
       "saas_alternative": "Zapier"
     },
-    "romm": {
+    "rommapp/romm": {
       "category": "Media & Photos",
       "saas_alternative": ""
     },
-    "mealie": {
+    "mealie-recipes/mealie": {
       "category": "Productivity",
       "saas_alternative": ""
     },
-    "nightingale": {
+    "ccfos/nightingale": {
       "category": "Monitoring",
       "saas_alternative": ""
     },
-    "wallabag": {
+    "wallabag/wallabag": {
       "category": "Productivity",
       "saas_alternative": "Pocket / Instapaper"
     },
-    "planka": {
+    "plankanban/planka": {
       "category": "Project Management",
       "saas_alternative": "Trello"
     },
-    "umbrel": {
+    "getumbrel/umbrel": {
       "category": "Homelab & Dashboards",
       "saas_alternative": ""
     },
-    "gatus": {
+    "TwiN/gatus": {
       "category": "Monitoring",
       "saas_alternative": ""
     },
-    "illa-builder": {
+    "illacloud/illa-builder": {
       "category": "Low-Code & Internal Tools",
       "saas_alternative": "Retool"
     },
-    "Kavita": {
+    "Kareadita/Kavita": {
       "category": "Media & Photos",
       "saas_alternative": ""
     },
-    "netmaker": {
+    "gravitl/netmaker": {
       "category": "Networking",
       "saas_alternative": "Tailscale"
     },
-    "homer": {
+    "bastienwirtz/homer": {
       "category": "Homelab & Dashboards",
       "saas_alternative": ""
     },
-    "nginx-ui": {
+    "0xJacky/nginx-ui": {
       "category": "Networking",
       "saas_alternative": ""
     },
-    "owncast": {
+    "owncast/owncast": {
       "category": "Media & Photos",
       "saas_alternative": ""
     },
-    "bore": {
+    "ekzhang/bore": {
       "category": "Networking",
       "saas_alternative": "ngrok"
     },
-    "ekko-studio": {
+    "EKKOLearnAI/ekko-studio": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "linkding": {
+    "sissbruecker/linkding": {
       "category": "Productivity",
       "saas_alternative": "Pocket / Instapaper"
     },
-    "hive": {
+    "aden-hive/hive": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "blinko": {
+    "blinkospace/blinko": {
       "category": "Notes & Docs",
       "saas_alternative": ""
     },
-    "llama-gpt": {
+    "getumbrel/llama-gpt": {
       "category": "AI & LLMs",
       "saas_alternative": "ChatGPT"
     },
-    "dawarich": {
+    "Freika/dawarich": {
       "category": "Other",
       "saas_alternative": ""
     },
-    "lago": {
+    "getlago/lago": {
       "category": "Finance & ERP",
       "saas_alternative": ""
     },
-    "Concat": {
+    "jub0t/Concat": {
       "category": "Media & Photos",
       "saas_alternative": ""
     },
-    "omni-tools": {
+    "iib0011/omni-tools": {
       "category": "Productivity",
       "saas_alternative": ""
     },
-    "PandaWiki": {
+    "chaitin/PandaWiki": {
       "category": "Notes & Docs",
       "saas_alternative": ""
     },
-    "feishin": {
+    "jeffvli/feishin": {
       "category": "Media & Photos",
       "saas_alternative": ""
     },
-    "deploy-your-own-saas": {
+    "Atarity/deploy-your-own-saas": {
       "category": "Resource Lists",
       "saas_alternative": ""
     },
-    "dashbeam": {
+    "tonyantony300/dashbeam": {
       "category": "File Storage",
       "saas_alternative": ""
     },
-    "awesome-privacy": {
+    "lissy93/awesome-privacy": {
       "category": "Resource Lists",
       "saas_alternative": ""
     },
-    "hyperdx": {
+    "hyperdxio/hyperdx": {
       "category": "Monitoring",
       "saas_alternative": ""
     },
-    "kanboard": {
+    "kanboard/kanboard": {
       "category": "Project Management",
       "saas_alternative": "Trello"
     },
-    "runtipi": {
+    "runtipi/runtipi": {
       "category": "Homelab & Dashboards",
       "saas_alternative": ""
     },
-    "pocket-id": {
+    "pocket-id/pocket-id": {
       "category": "Auth & Security",
       "saas_alternative": ""
     },
-    "atlas": {
+    "pacifio/atlas": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "grocy": {
+    "grocy/grocy": {
       "category": "Productivity",
       "saas_alternative": ""
     },
-    "kaneo": {
+    "usekaneo/kaneo": {
       "category": "Project Management",
       "saas_alternative": "Jira"
     },
-    "certimate": {
+    "certimate-go/certimate": {
       "category": "Auth & Security",
       "saas_alternative": ""
     },
-    "highlight": {
+    "highlight/highlight": {
       "category": "Monitoring",
       "saas_alternative": ""
     },
-    "local-deep-research": {
+    "LearningCircuit/local-deep-research": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "wealthfolio": {
+    "wealthfolio/wealthfolio": {
       "category": "Finance & ERP",
       "saas_alternative": ""
     },
-    "databasus": {
+    "databasus/databasus": {
       "category": "Database",
       "saas_alternative": ""
     },
-    "teslamate": {
+    "teslamate-org/teslamate": {
       "category": "Other",
       "saas_alternative": ""
     },
-    "solidtime": {
+    "solidtime-io/solidtime": {
       "category": "Project Management",
       "saas_alternative": ""
     },
-    "dashboard-icons": {
+    "homarr-labs/dashboard-icons": {
       "category": "Other",
       "saas_alternative": ""
     },
-    "microsandbox": {
+    "superradcompany/microsandbox": {
       "category": "Deployment & Hosting",
       "saas_alternative": ""
     },
-    "Wallos": {
+    "ellite/Wallos": {
       "category": "Finance & ERP",
       "saas_alternative": ""
     },
-    "PrivateBin": {
+    "PrivateBin/PrivateBin": {
       "category": "Notes & Docs",
       "saas_alternative": ""
     },
-    "utopia": {
+    "deeplethe/utopia": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
-    "AIHOT": {
+    "KKKKhazix/AIHOT": {
       "category": "CMS & Blogging",
       "saas_alternative": ""
     },
-    "modly": {
+    "lightningpixel/modly": {
       "category": "AI & LLMs",
       "saas_alternative": ""
     },
@@ -537,9 +537,13 @@
       "category": "Homelab & Dashboards",
       "saas_alternative": ""
     },
-    "memories": {
+    "pulsejet/memories": {
       "category": "Media & Photos",
       "saas_alternative": "Google Photos"
+    },
+    "tryatlas/atlas": {
+      "category": "AI & LLMs",
+      "saas_alternative": ""
     }
   }
 }

@@ -74,7 +74,7 @@ BRAND_TOKENS = {
     "Okta / Auth0": ["okta", "auth0", "identity provider", "sso"],
     "Pushover": ["pushover", "push notification", "push-notification"],
     "Notion": ["notion"],
-    "Slack": ["slack"],
+    "Slack": ["slack alternative", "alternative to slack", "slack-alternative", "replacement for slack", "open source slack"],
     "Retool": ["retool"],
     "Tailscale": ["tailscale", "zerotier"],
     "ngrok": ["ngrok"],
@@ -83,7 +83,7 @@ BRAND_TOKENS = {
     "Airtable": ["airtable"],
     "Calendly": ["calendly", "cal.com"],
     "Confluence": ["confluence"],
-    "Shopify": ["shopify"],
+    "Shopify": ["shopify alternative", "alternative to shopify", "shopify-alternative", "replacement for shopify", "open source shopify"],
 }
 
 # topic slug (without "-alternative") -> brand, for tools that tag themselves
@@ -253,6 +253,10 @@ def infer_alternative(tool, existing):
     existing = ALT_ALIASES.get(existing, existing)
     if existing and any(phrase_in(hay, p) for p in BRAND_TOKENS.get(existing, [])):
         return existing
+
+    # 2a) self-hosted VPN servers are alternatives to commercial VPN services
+    if any(t.lower() == "vpn" for t in tool.get("topics", [])):
+        return "NordVPN"
 
     # 2) explicit "<brand>-alternative" topics
     for t in tool.get("topics", []):
