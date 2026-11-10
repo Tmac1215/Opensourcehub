@@ -766,6 +766,10 @@
     "DialmasterOrg/Youtarr": {
       "category": "Media & Photos",
       "saas_alternative": ""
+    },
+    "colanode/colanode": {
+      "category": "Notes & Docs",
+      "saas_alternative": "Notion"
     }
   }
 }

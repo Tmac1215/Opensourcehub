@@ -121,12 +121,11 @@ function buildSummary(saas: string, tools: Software[]): string {
     }
   }
 
+  const unlicensed = tools.filter(t => !displayLicense(t.license)).length;
   const licenses = topCounts(tools.map(t => displayLicense(t.license)), 2);
   if (licenses.length > 0) {
-    parts.push(`Licenses include ${licenses.map(l => l.value).join(' and ')}; always check the license before you deploy.`);
+    parts.push(`Licenses include ${licenses.map(l => l.value).join(' and ')}${unlicensed > 0 ? '.' : '; always check the license before you deploy.'}`);
   }
-
-  const unlicensed = tools.filter(t => !displayLicense(t.license)).length;
   if (unlicensed > 0) {
     parts.push(
       `GitHub did not detect a standard license for ${unlicensed} of ${n}; some projects use source-available or custom licenses, so read the license before you deploy.`,
@@ -135,7 +134,7 @@ function buildSummary(saas: string, tools: Software[]): string {
 
   const docker = tools.filter(t => t.has_docker).length;
   if (docker > 0) {
-    parts.push(`${docker} of ${n} show Docker support in their repository.`);
+    parts.push(`${docker} of ${n} ${docker === 1 ? 'shows' : 'show'} Docker support in their repository.`);
   }
 
   const newest = tools.map(t => t.last_updated).filter(Boolean).sort().slice(-1)[0];

@@ -6113,7 +6113,7 @@
       "last_updated": "2026-11-09",
       "license": "Apache-2.0",
       "saas_alternative": "Notion",
-      "category": "Database",
+      "category": "Notes & Docs",
       "has_docker": false,
       "topics": [
         "chat",
