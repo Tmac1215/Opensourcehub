@@ -7,6 +7,7 @@ const nextConfig = {
     return [
       { source: '/index', destination: '/', statusCode: 301 },
       { source: '/index.html', destination: '/', statusCode: 301 },
+      { source: '/alternative/pocket-instapaper-alternatives', destination: '/alternative/pocket-alternatives', statusCode: 301 },
     ];
   },
   async headers() {

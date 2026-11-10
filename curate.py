@@ -28,7 +28,7 @@ OVERRIDES_PATH = Path("./data/overrides.json")
 # ── Merge near-duplicate alternative names so each SaaS has one page ──────────
 
 ALT_ALIASES = {
-    "Pocket": "Pocket / Instapaper",
+    "Pocket / Instapaper": "Pocket",
     "Heroku": "Heroku / Vercel",
     "Google Drive": "Google Drive / Dropbox",
     "Todoist / Jira": "Jira",
@@ -62,7 +62,7 @@ BRAND_TOKENS = {
     "Mailchimp": ["mailchimp", "newsletter", "mailing list"],
     "Feedly": ["feedly", "rss reader", "rss-reader", "news aggregator", "news-aggregator"],
     "Tableau / Looker": ["tableau", "looker", "business intelligence", "business-intelligence"],
-    "Pocket / Instapaper": ["pocket", "instapaper", "read-it-later", "read it later", "bookmark"],
+    "Pocket": ["pocket", "instapaper", "read-it-later", "read it later", "bookmark"],
     "Bugsnag / Rollbar": ["bugsnag", "rollbar", "sentry", "error tracking", "error-tracking"],
     "1Password": ["1password", "lastpass", "bitwarden", "password manager", "password-manager"],
     "Zoom": ["zoom", "video conferencing", "video-conferencing", "jitsi"],
@@ -92,7 +92,7 @@ TOPIC_BRANDS = {
     "google-drive": "Google Drive / Dropbox", "dropbox": "Google Drive / Dropbox",
     "notion": "Notion", "slack": "Slack", "trello": "Trello", "jira": "Jira", "zapier": "Zapier",
     "heroku": "Heroku / Vercel", "vercel": "Heroku / Vercel", "netlify": "Heroku / Vercel",
-    "firebase": "Firebase", "mailchimp": "Mailchimp", "evernote": "Evernote", "pocket": "Pocket / Instapaper",
+    "firebase": "Firebase", "mailchimp": "Mailchimp", "evernote": "Evernote", "pocket": "Pocket",
     "docusign": "DocuSign", "airtable": "Airtable", "calendly": "Calendly", "zoom": "Zoom",
     "1password": "1Password", "lastpass": "1Password", "okta": "Okta / Auth0", "auth0": "Okta / Auth0",
     "intercom": "Intercom", "datadog": "Datadog", "pingdom": "Pingdom", "sentry": "Bugsnag / Rollbar",
@@ -274,6 +274,15 @@ def infer_alternative(tool, existing):
     return ""
 
 
+def _slugify(text):
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+def _owner(tool):
+    parts = tool.get("github_url", "").rstrip("/").split("/")
+    return parts[-2] if len(parts) >= 2 else ""
+
+
 def curate(software):
     overrides = {}
     if OVERRIDES_PATH.exists():
@@ -282,15 +291,36 @@ def curate(software):
     for tool in software:
         repo = "/".join(tool.get("github_url", "").rstrip("/").split("/")[-2:])
         ov = overrides.get(repo) or overrides.get(tool["name"])
-        if ov:
+        if ov and "category" in ov:
             tool["category"] = ov["category"]
             tool["saas_alternative"] = ALT_ALIASES.get(ov["saas_alternative"], ov["saas_alternative"])
+            if ov.get("display_name"):
+                tool["name"] = ov["display_name"]   # e.g. repo "server" -> "Nextcloud"
             continue
+        if ov and ov.get("display_name"):
+            tool["name"] = ov["display_name"]   # name-only override: labels stay automatic
         tool["category"] = classify(tool)
         if tool["category"] == "Resource Lists":
             tool["saas_alternative"] = ""   # lists are not alternatives to one product
         else:
             tool["saas_alternative"] = infer_alternative(tool, tool.get("saas_alternative", ""))
+
+    # Any two tools that still share a name get the owner appended, so every card is unambiguous
+    counts = {}
+    for tool in software:
+        counts[tool["name"]] = counts.get(tool["name"], 0) + 1
+    for tool in software:
+        if counts[tool["name"]] > 1:
+            tool["name"] = f'{tool["name"]} ({_owner(tool)})'
+
+    # Keep slugs unique and in sync with the (possibly renamed) display names
+    used = set()
+    for tool in software:
+        slug = _slugify(tool["name"]) or _slugify(_owner(tool))
+        if slug in used:
+            slug = f"{slug}-{_slugify(_owner(tool))}"
+        used.add(slug)
+        tool["slug"] = slug
     return software
 
 

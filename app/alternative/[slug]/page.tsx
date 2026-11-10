@@ -126,6 +126,13 @@ function buildSummary(saas: string, tools: Software[]): string {
     parts.push(`Licenses include ${licenses.map(l => l.value).join(' and ')}; always check the license before you deploy.`);
   }
 
+  const unlicensed = tools.filter(t => !displayLicense(t.license)).length;
+  if (unlicensed > 0) {
+    parts.push(
+      `GitHub did not detect a standard license for ${unlicensed} of ${n}; some projects use source-available or custom licenses, so read the license before you deploy.`,
+    );
+  }
+
   const docker = tools.filter(t => t.has_docker).length;
   if (docker > 0) {
     parts.push(`${docker} of ${n} show Docker support in their repository.`);
@@ -313,6 +320,53 @@ export default function AlternativePage({ params }: { params: { slug: string } }
 
             {/* ── MAIN CONTENT ──────────────────────────────────────────── */}
             <div className="lg:col-span-3 space-y-14">
+
+              {/* 0. The actual tools, side by side (built from live data) */}
+              <section>
+                <h2 className="text-2xl font-bold text-white mb-2">
+                  {saas} Alternatives Compared
+                </h2>
+                <p className="text-slate-400 text-sm mb-6">
+                  The {tools.length === 1 ? 'tool' : `${tools.length} tools`} we track for {saas}, ranked by GitHub stars.
+                  Data refreshed {formatDate(getGeneratedAt())}.
+                </p>
+                <div className="overflow-x-auto rounded-xl border border-slate-700/50">
+                  <table className="w-full text-sm">
+                    <caption className="sr-only">Open-source alternatives to {saas} compared by stars, language, license and last update</caption>
+                    <thead>
+                      <tr className="bg-slate-800/80 border-b border-slate-700/50 text-left">
+                        <th scope="col" className="px-4 py-3 text-slate-300 font-semibold">Tool</th>
+                        <th scope="col" className="px-4 py-3 text-slate-300 font-semibold text-right">Stars</th>
+                        <th scope="col" className="px-4 py-3 text-slate-300 font-semibold">Language</th>
+                        <th scope="col" className="px-4 py-3 text-slate-300 font-semibold">License</th>
+                        <th scope="col" className="px-4 py-3 text-slate-300 font-semibold">Updated</th>
+                        <th scope="col" className="px-4 py-3 text-slate-300 font-semibold">Docker</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-700/30">
+                      {tools.map((t, i) => (
+                        <tr key={t.github_url} className={i % 2 === 0 ? 'bg-slate-900/30' : 'bg-slate-800/20'}>
+                          <th scope="row" className="px-4 py-3 text-left font-medium">
+                            <a
+                              href={t.github_url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-emerald-400 hover:text-emerald-300 underline underline-offset-2"
+                            >
+                              {t.name}
+                            </a>
+                          </th>
+                          <td className="px-4 py-3 text-right text-slate-200 tabular-nums">{formatStars(t.stars)}</td>
+                          <td className="px-4 py-3 text-slate-300">{t.language || '—'}</td>
+                          <td className="px-4 py-3 text-slate-300">{displayLicense(t.license) || 'Not detected'}</td>
+                          <td className="px-4 py-3 text-slate-300 whitespace-nowrap">{t.last_updated ? formatDate(t.last_updated) : '—'}</td>
+                          <td className="px-4 py-3 text-slate-300">{t.has_docker ? 'Yes' : 'Not detected'}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </section>
 
               {/* 1. Comparison table */}
               <section>

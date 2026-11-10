@@ -22,6 +22,7 @@ import requests
 
 GITHUB_TOKEN = os.getenv("GITHUB_TOKEN", "")
 OUTPUT_PATH  = Path("./data/software.json")
+EXTRA_REPOS_PATH = Path("./data/extra-repos.json")
 PER_PAGE     = 100          # max allowed by GitHub
 MAX_PAGES    = 5            # per topic  → up to 500 repos per topic
 SLEEP_BETWEEN = 1.2         # seconds between API calls (stay well under rate limits)
@@ -245,6 +246,31 @@ def fetch_topic_repos(topic: str) -> list[dict]:
     return results
 
 
+def fetch_extra_repos() -> list[dict]:
+    """Fetch the hand-picked repositories listed in data/extra-repos.json.
+
+    These are projects the topic search can miss (for example, they lack the 'self-hosted'
+    topic). Renamed repositories are followed automatically; missing or archived ones are
+    skipped with a warning so one bad entry never breaks a refresh.
+    """
+    if not EXTRA_REPOS_PATH.exists():
+        return []
+    repos = json.loads(EXTRA_REPOS_PATH.read_text(encoding="utf-8")).get("repos", [])
+    results: list[dict] = []
+    for full_name in repos:
+        data = safe_get(f"https://api.github.com/repos/{full_name}")
+        time.sleep(SLEEP_BETWEEN)
+        if not data or "id" not in data:
+            log.warning("  extra repo %s not found - skipped", full_name)
+            continue
+        if data.get("archived") or data.get("fork"):
+            log.warning("  extra repo %s is archived or a fork - skipped", full_name)
+            continue
+        results.append(data)
+    log.info("  → %d extra repos fetched", len(results))
+    return results
+
+
 def normalise(raw: dict) -> dict:
     """Convert a raw GitHub repo item into our clean schema."""
     name        = raw.get("name", "")
@@ -309,6 +335,15 @@ def main() -> None:
             all_repos.append(normalise(item))
 
         time.sleep(SLEEP_BETWEEN)
+
+    # Hand-picked repositories (always included, even without the searched topics)
+    log.info("Fetching hand-picked repositories")
+    for item in fetch_extra_repos():
+        repo_id = str(item.get("id", ""))
+        if repo_id in seen_ids:
+            continue
+        seen_ids.add(repo_id)
+        all_repos.append(normalise(item))
 
     # Sort by stars descending
     all_repos.sort(key=lambda r: r["stars"], reverse=True)

@@ -123,7 +123,8 @@
     },
     "gethomepage/homepage": {
       "category": "Homelab & Dashboards",
-      "saas_alternative": ""
+      "saas_alternative": "",
+      "display_name": "Homepage"
     },
     "onyx-dot-app/onyx": {
       "category": "AI & LLMs",
@@ -151,7 +152,7 @@
     },
     "karakeep-app/karakeep": {
       "category": "Productivity",
-      "saas_alternative": "Pocket / Instapaper"
+      "saas_alternative": "Pocket"
     },
     "community-scripts/ProxmoxVE": {
       "category": "Homelab & Dashboards",
@@ -159,7 +160,8 @@
     },
     "plausible/analytics": {
       "category": "Analytics",
-      "saas_alternative": "Google Analytics"
+      "saas_alternative": "Google Analytics",
+      "display_name": "Plausible Analytics"
     },
     "ArchiveBox/ArchiveBox": {
       "category": "Productivity",
@@ -227,7 +229,7 @@
     },
     "linkwarden/linkwarden": {
       "category": "Productivity",
-      "saas_alternative": "Pocket / Instapaper"
+      "saas_alternative": "Pocket"
     },
     "C4illin/ConvertX": {
       "category": "Forms & Documents",
@@ -247,7 +249,8 @@
     },
     "suitenumerique/docs": {
       "category": "Notes & Docs",
-      "saas_alternative": "Google Docs"
+      "saas_alternative": "Google Docs",
+      "display_name": "Docs (La Suite)"
     },
     "MODSetter/SurfSense": {
       "category": "AI & LLMs",
@@ -291,7 +294,8 @@
     },
     "oblien/openship": {
       "category": "Deployment & Hosting",
-      "saas_alternative": ""
+      "saas_alternative": "",
+      "display_name": "Openship (oblien)"
     },
     "liketrek/TREK": {
       "category": "Productivity",
@@ -327,7 +331,7 @@
     },
     "wallabag/wallabag": {
       "category": "Productivity",
-      "saas_alternative": "Pocket / Instapaper"
+      "saas_alternative": "Pocket"
     },
     "plankanban/planka": {
       "category": "Project Management",
@@ -375,7 +379,7 @@
     },
     "sissbruecker/linkding": {
       "category": "Productivity",
-      "saas_alternative": "Pocket / Instapaper"
+      "saas_alternative": "Pocket"
     },
     "aden-hive/hive": {
       "category": "AI & LLMs",
@@ -511,31 +515,38 @@
     },
     "gotify/server": {
       "category": "Productivity",
-      "saas_alternative": "Pushover"
+      "saas_alternative": "Pushover",
+      "display_name": "Gotify"
     },
     "getsentry/self-hosted": {
       "category": "Monitoring",
-      "saas_alternative": "Bugsnag / Rollbar"
+      "saas_alternative": "Bugsnag / Rollbar",
+      "display_name": "Sentry (self-hosted)"
     },
     "owncloud/core": {
       "category": "File Storage",
-      "saas_alternative": "Google Drive / Dropbox"
+      "saas_alternative": "Google Drive / Dropbox",
+      "display_name": "ownCloud"
     },
     "Sync-in/server": {
       "category": "File Storage",
-      "saas_alternative": "Google Drive / Dropbox"
+      "saas_alternative": "Google Drive / Dropbox",
+      "display_name": "Sync-in"
     },
     "traggo/server": {
       "category": "Project Management",
-      "saas_alternative": ""
+      "saas_alternative": "",
+      "display_name": "Traggo"
     },
     "stoatchat/self-hosted": {
       "category": "Chat & Messaging",
-      "saas_alternative": ""
+      "saas_alternative": "",
+      "display_name": "Stoat"
     },
     "secluso/core": {
       "category": "Homelab & Dashboards",
-      "saas_alternative": ""
+      "saas_alternative": "",
+      "display_name": "Secluso"
     },
     "pulsejet/memories": {
       "category": "Media & Photos",
@@ -543,6 +554,217 @@
     },
     "tryatlas/atlas": {
       "category": "AI & LLMs",
+      "saas_alternative": ""
+    },
+    "TryGhost/Ghost": {
+      "category": "CMS & Blogging",
+      "saas_alternative": "Medium / Substack"
+    },
+    "writefreely/writefreely": {
+      "category": "CMS & Blogging",
+      "saas_alternative": "Medium / Substack",
+      "display_name": "WriteFreely"
+    },
+    "HermanMartinus/bearblog": {
+      "category": "CMS & Blogging",
+      "saas_alternative": "Medium / Substack",
+      "display_name": "Bear Blog"
+    },
+    "mataroablog/mataroa": {
+      "category": "CMS & Blogging",
+      "saas_alternative": "Medium / Substack",
+      "display_name": "Mataroa"
+    },
+    "calcom/cal.diy": {
+      "category": "Productivity",
+      "saas_alternative": "Calendly",
+      "display_name": "Cal.diy (Cal.com)"
+    },
+    "lukevella/rallly": {
+      "category": "Productivity",
+      "saas_alternative": "Calendly",
+      "display_name": "Rallly"
+    },
+    "alextselegidis/easyappointments": {
+      "category": "Productivity",
+      "saas_alternative": "Calendly",
+      "display_name": "Easy!Appointments"
+    },
+    "frappe/erpnext": {
+      "category": "Finance & ERP",
+      "saas_alternative": "QuickBooks",
+      "display_name": "ERPNext"
+    },
+    "akaunting/akaunting": {
+      "category": "Finance & ERP",
+      "saas_alternative": "QuickBooks",
+      "display_name": "Akaunting"
+    },
+    "invoiceninja/invoiceninja": {
+      "category": "Finance & ERP",
+      "saas_alternative": "QuickBooks",
+      "display_name": "Invoice Ninja"
+    },
+    "bigcapitalhq/bigcapital": {
+      "category": "Finance & ERP",
+      "saas_alternative": "QuickBooks",
+      "display_name": "Bigcapital"
+    },
+    "miniflux/v2": {
+      "category": "Productivity",
+      "saas_alternative": "Feedly",
+      "display_name": "Miniflux"
+    },
+    "mautic/mautic": {
+      "category": "CRM & Marketing",
+      "saas_alternative": "Mailchimp",
+      "display_name": "Mautic"
+    },
+    "pentacent/keila": {
+      "category": "Email",
+      "saas_alternative": "Mailchimp",
+      "display_name": "Keila"
+    },
+    "nextcloud/server": {
+      "category": "File Storage",
+      "saas_alternative": "Google Drive / Dropbox",
+      "display_name": "Nextcloud"
+    },
+    "haiwen/seafile": {
+      "category": "File Storage",
+      "saas_alternative": "Google Drive / Dropbox",
+      "display_name": "Seafile"
+    },
+    "Athou/commafeed": {
+      "category": "Productivity",
+      "saas_alternative": "Feedly",
+      "display_name": "CommaFeed"
+    },
+    "fossar/selfoss": {
+      "category": "Productivity",
+      "saas_alternative": "Feedly"
+    },
+    "0x2E/fusion": {
+      "category": "Productivity",
+      "saas_alternative": "Feedly"
+    },
+    "pelican/panel": {
+      "display_name": "Pelican Panel"
+    },
+    "bluesky-social/pds": {
+      "display_name": "Bluesky PDS"
+    },
+    "openshiporg/openship": {
+      "display_name": "Openship (openshiporg)"
+    },
+    "sandstorm-io/sandstorm": {
+      "display_name": "Sandstorm"
+    },
+    "deeplethe/sandstorm": {
+      "display_name": "Sandstorm (deeplethe)"
+    },
+    "frappe/frappe_docker": {
+      "category": "Finance & ERP",
+      "saas_alternative": "QuickBooks",
+      "display_name": "Frappe Docker (ERPNext)"
+    },
+    "ente/ente": {
+      "category": "Media & Photos",
+      "saas_alternative": "Google Photos",
+      "display_name": "Ente"
+    },
+    "LibrePhotos/librephotos": {
+      "category": "Media & Photos",
+      "saas_alternative": "Google Photos",
+      "display_name": "LibrePhotos"
+    },
+    "jellyfin/jellyfin": {
+      "category": "Media & Photos",
+      "saas_alternative": "Plex / Netflix",
+      "display_name": "Jellyfin"
+    },
+    "xbmc/xbmc": {
+      "category": "Media & Photos",
+      "saas_alternative": "Plex / Netflix",
+      "display_name": "Kodi"
+    },
+    "umami-software/umami": {
+      "category": "Analytics",
+      "saas_alternative": "Google Analytics",
+      "display_name": "Umami"
+    },
+    "matomo-org/matomo": {
+      "category": "Analytics",
+      "saas_alternative": "Google Analytics",
+      "display_name": "Matomo"
+    },
+    "arp242/goatcounter": {
+      "category": "Analytics",
+      "saas_alternative": "Google Analytics",
+      "display_name": "GoatCounter"
+    },
+    "AppFlowy-IO/AppFlowy": {
+      "category": "Notes & Docs",
+      "saas_alternative": "Notion",
+      "display_name": "AppFlowy"
+    },
+    "toeverything/AFFiNE": {
+      "category": "Notes & Docs",
+      "saas_alternative": "Notion",
+      "display_name": "AFFiNE"
+    },
+    "outline/outline": {
+      "category": "Notes & Docs",
+      "saas_alternative": "Notion",
+      "display_name": "Outline"
+    },
+    "docmost/docmost": {
+      "category": "Notes & Docs",
+      "saas_alternative": "Notion",
+      "display_name": "Docmost"
+    },
+    "fatedier/frp": {
+      "category": "Networking",
+      "saas_alternative": "ngrok",
+      "display_name": "frp"
+    },
+    "jpillora/chisel": {
+      "category": "Networking",
+      "saas_alternative": "ngrok",
+      "display_name": "Chisel"
+    },
+    "rathole-org/rathole": {
+      "category": "Networking",
+      "saas_alternative": "ngrok",
+      "display_name": "Rathole"
+    },
+    "Budibase/budibase": {
+      "category": "Low-Code & Internal Tools",
+      "saas_alternative": "Retool",
+      "display_name": "Budibase"
+    },
+    "NeptuneHub/AudioMuse-AI": {
+      "category": "Media & Photos",
+      "saas_alternative": ""
+    },
+    "connorgallopo/Tracearr": {
+      "category": "Media & Photos",
+      "saas_alternative": ""
+    },
+    "chrisbenincasa/tunarr": {
+      "category": "Media & Photos",
+      "saas_alternative": ""
+    },
+    "lscambo13/ElegantFin": {
+      "category": "Media & Photos",
+      "saas_alternative": ""
+    },
+    "AdrienPoupa/docker-compose-nas": {
+      "category": "Media & Photos",
+      "saas_alternative": ""
+    },
+    "DialmasterOrg/Youtarr": {
+      "category": "Media & Photos",
       "saas_alternative": ""
     }
   }

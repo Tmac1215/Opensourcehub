@@ -26,6 +26,168 @@
         "question": "Will the answers be as good as {saas}'s?",
         "answer": "It depends mostly on the model you choose. Open models handle many everyday tasks well, but the top commercial models often still lead on hard reasoning and coding. LlamaGPT's description mentions Llama 2 and Code Llama, so check which models each tool supports today, and test your own prompts before you switch."
       }
+    ],
+    "Medium / Substack": [
+      {
+        "question": "What is the best open-source alternative to Medium or Substack?",
+        "answer": "By GitHub popularity, {top} leads, with {topStars} stars. Ghost describes itself as publishing technology for memberships, subscriptions and newsletters, so it fits best if you want a Substack-style newsletter. WriteFreely, Bear Blog and Mataroa are simpler writing-first blogging platforms closer to Medium."
+      },
+      {
+        "question": "Can I send newsletters with these tools?",
+        "answer": "Ghost lists newsletters and memberships in its description. For the others, check each project's documentation for email and subscription features. Newsletter tools such as listmonk, which we list as a Mailchimp alternative, can be paired with a blog if you need email."
+      },
+      {
+        "question": "Do I have to host it myself?",
+        "answer": "Not always. These projects are open source and can be self-hosted, which means running a server and handling updates, backups and security. Some projects also offer hosted versions, so check each project's website if you would rather not manage a server."
+      },
+      {
+        "question": "Will I keep my readers if I switch?",
+        "answer": "Usually only if you export your posts and subscriber list first. Check what your current platform lets you export and what the new tool can import, and set up redirects from your old URLs so existing links and search traffic keep working."
+      }
+    ],
+    "Pocket": [
+      {
+        "question": "What is the best open-source alternative to {saas}?",
+        "answer": "By GitHub popularity, {top} leads, with {topStars} stars. karakeep describes itself as a bookmark-everything app with AI-based automatic tagging, wallabag is built for saving articles to read later, and linkding aims to be minimal, fast and easy to set up with Docker."
+      },
+      {
+        "question": "Can I import my saved articles from {saas}?",
+        "answer": "If you have a {saas} export file, check whether the tool you pick can import it. Import support differs by project, so read each project's documentation and test with a small batch before you move everything."
+      },
+      {
+        "question": "Can these tools keep a permanent copy of a page?",
+        "answer": "Linkwarden describes itself as a bookmark manager to collect, read, annotate and fully preserve what matters, and wallabag is built for saving pages to read later. Features differ, so check each project's documentation."
+      },
+      {
+        "question": "Do I need my own server?",
+        "answer": "Yes, these are self-hosted, so you run them on a server, a home machine or a hosting plan. linkding describes itself as easy to set up using Docker. You are also responsible for updates and backups."
+      }
+    ],
+    "Calendly": [
+      {
+        "question": "What is the best open-source alternative to {saas}?",
+        "answer": "By GitHub popularity, {top} leads, with {topStars} stars. Cal.diy is published under the Cal.com GitHub organization and describes itself as scheduling infrastructure, Rallly focuses on organizing events and meetings with a group, and Easy!Appointments is a self-hosted appointment scheduler."
+      },
+      {
+        "question": "Which one suits group scheduling and which suits one-to-one booking?",
+        "answer": "Rallly describes itself as a tool for organizing events and meetings, which suits finding a time that works for several people. Easy!Appointments describes itself as an appointment scheduler, which fits booking one-to-one slots. Read Cal.diy's documentation to see which booking features it includes."
+      },
+      {
+        "question": "Do they sync with my calendar?",
+        "answer": "Calendar integrations vary by project and setup. If syncing with your calendar is essential, confirm it is supported in the project's documentation before you migrate your bookings."
+      },
+      {
+        "question": "Are they free?",
+        "answer": "The software is free to self-host. According to GitHub, Cal.diy uses the MIT license, Rallly AGPL-3.0 and Easy!Appointments GPL-3.0. You still pay for hosting and your own time, and some projects also sell hosted plans."
+      }
+    ],
+    "Google Photos": [
+      {
+        "question": "What is the best open-source alternative to {saas}?",
+        "answer": "By GitHub popularity, {top} leads, with {topStars} stars. Immich describes itself as a high-performance photo and video management solution, PhotoPrism as an AI-powered photos app, LibrePhotos as a self-hosted photo management service, and Ente as end-to-end encrypted cloud storage."
+      },
+      {
+        "question": "Which option works with Nextcloud?",
+        "answer": "Memories describes itself as a photo management suite that runs as a Nextcloud app, so it fits if you already use Nextcloud, which we list as a Google Drive alternative."
+      },
+      {
+        "question": "How much storage will I need?",
+        "answer": "Plan for your whole photo and video library plus room to grow, since videos take far more space than photos. Self-hosting does not protect you from a failed disk, so keep backups of your originals."
+      },
+      {
+        "question": "Are my photos private?",
+        "answer": "On your own server your photos stay under your control, but you are responsible for securing and updating it. Ente describes itself as end-to-end encrypted. For the others, check each project's documentation on encryption and sharing settings."
+      }
+    ],
+    "Plex / Netflix": [
+      {
+        "question": "What are the open-source alternatives to Plex?",
+        "answer": "By GitHub popularity, {top} leads, with {topStars} stars. Jellyfin describes itself as a free software media system, and Kodi as free and open source home theater and media center software. Both play media you already own."
+      },
+      {
+        "question": "Can these replace Netflix?",
+        "answer": "Not in the sense of providing shows and films. They organize and play your own library of movies, shows and music. If you want a catalog of content, you still need your own files or a separate streaming service."
+      },
+      {
+        "question": "Can I use them on my TV?",
+        "answer": "Apps and client support differ by project and device, so check each project's documentation and app listings for your TV or streaming box before you commit to one."
+      },
+      {
+        "question": "What do I need to run one?",
+        "answer": "A computer or server to hold your media and run the software, enough storage, and a network connection. Converting video on the fly for different devices needs more processing power than simply sending the file as it is."
+      }
+    ],
+    "Google Analytics": [
+      {
+        "question": "What is the best open-source alternative to {saas}?",
+        "answer": "By GitHub popularity, {top} leads, with {topStars} stars. Umami describes itself as privacy-first web and product analytics, Plausible as lightweight and cookie-free, and GoatCounter as easy web analytics with no tracking of personal data."
+      },
+      {
+        "question": "Do I still need a cookie banner?",
+        "answer": "It depends on the tool's settings and the privacy laws that apply to you. Plausible describes itself as cookie-free and GoatCounter as not tracking personal data, but check the legal requirements for your situation. This is not legal advice."
+      },
+      {
+        "question": "How is this different from {saas}?",
+        "answer": "These tools focus on simpler, privacy-friendlier measurement such as page views, sources and devices, and you keep the data on your own server. {saas} offers more advanced features and links to Google's advertising products, so check that a self-hosted tool covers the reports you need."
+      },
+      {
+        "question": "What does it cost to run?",
+        "answer": "The software is free, and you pay for a server and your time. A small site often runs on a small VPS, but analytics data grows with traffic, so plan for storage and backups."
+      }
+    ],
+    "Notion": [
+      {
+        "question": "What is the best open-source alternative to {saas}?",
+        "answer": "By GitHub popularity, {top} leads, with {topStars} stars. AppFlowy describes itself as bringing projects, wikis and teams together, Outline and Docmost are knowledge-base and wiki tools for teams, and SiYuan is a privacy-first, self-hosted knowledge workspace."
+      },
+      {
+        "question": "Which suits a team wiki and which suits personal notes?",
+        "answer": "Outline describes itself as a knowledge base for growing teams and Docmost as collaborative wiki and documentation software. SiYuan describes itself as a privacy-first, self-hosted knowledge workspace, so check its documentation for team features."
+      },
+      {
+        "question": "Can I import my {saas} workspace?",
+        "answer": "{saas} lets you export your content, and some tools can import those files, but support varies. Check each project's documentation and test with a small part of your workspace before you move everything."
+      },
+      {
+        "question": "Is self-hosting a notes app worth it?",
+        "answer": "It can be if you want control of your data and no per-seat fees, but you take on updates, backups and security. Licenses also differ, and GitHub did not detect a standard license for some of these projects, so read the license before you deploy."
+      }
+    ],
+    "ngrok": [
+      {
+        "question": "What is the best open-source alternative to {saas}?",
+        "answer": "By GitHub popularity, {top} leads, with {topStars} stars. frp describes itself as a fast reverse proxy for exposing a local server behind a NAT or firewall, bore as a simple CLI tool for making tunnels to localhost, and Chisel as a fast TCP and UDP tunnel over HTTP. Rathole and portr do similar jobs."
+      },
+      {
+        "question": "Do I need my own server?",
+        "answer": "Yes. {saas} runs the public server for you, but these tools need a server with a public IP address that you run, and a small VPS is often enough, to relay traffic to your local machine."
+      },
+      {
+        "question": "Which one is easiest to start with?",
+        "answer": "bore describes itself as a simple CLI tool, so it is a light starting point. frp and Rathole typically use configuration files and suit permanent setups. Pick the simplest tool that covers the protocol you need, such as HTTP, TCP or UDP."
+      },
+      {
+        "question": "Is it safe to expose a local service?",
+        "answer": "Any tunnel makes a local service reachable from the internet, so protect it with authentication, keep the software updated, and expose only what you need. Prefer encrypted connections."
+      }
+    ],
+    "Retool": [
+      {
+        "question": "What is the best open-source alternative to {saas}?",
+        "answer": "By GitHub popularity, {top} leads, with {topStars} stars. Appsmith describes itself as a platform for building admin panels, internal tools and dashboards that integrates with 25+ databases and any API, and ILLA Builder as a low-code platform for business apps. Budibase and ToolJet cover similar ground."
+      },
+      {
+        "question": "Do I need to code?",
+        "answer": "These are low-code tools, so you typically build screens with components and write small snippets for logic. The skills needed differ by project, so try each one locally or in its demo."
+      },
+      {
+        "question": "What data sources can they connect to?",
+        "answer": "Appsmith describes integrations with 25+ databases and any API. Check each project's documentation for the databases and services you use before you choose."
+      },
+      {
+        "question": "Are they free?",
+        "answer": "The core projects are free to self-host, but some have paid editions or restrictions, and GitHub did not detect a standard license for some of them. Read each license first."
+      }
     ]
   }
 }
